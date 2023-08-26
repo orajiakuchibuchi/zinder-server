@@ -8,7 +8,13 @@ const ACCEPTED_DOMAINS = ['http://localhost:3000',
                           'http://localhost:5001',
                           'http://localhost:5002',
                           'http://localhost:5003',
-                          'https://localhost:4200'];
+                          'https://localhost:4200',
+                          'https://zinder-server.onrender.com',
+                          'https://zinder-mail-server.onrender.com',
+                          'https://zinder-file-server.onrender.com',
+                          'https://zinder.onrender.com',
+                          'https://zinder.com.ng',
+                        ];
 
 export default function authMiddleWare (req, res, next) {
     const origin = req.get('origin');
