@@ -1,0 +1,6 @@
+
+# dependencies
+/node_modules
+# /public/v
+/db/record.backup.json
+package-lock.json
