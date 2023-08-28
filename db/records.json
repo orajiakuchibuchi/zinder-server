@@ -567,34 +567,6 @@
       "app_code": "ZA-001"
     },
     {
-      "id": 5,
-      "name": "Employees",
-      "icon": "micon bi bi-person-workspace",
-      "children": [
-        {
-          "id": 2,
-          "name": "All Employees",
-          "children": [],
-          "link": "admin/employee/all",
-          "roles": "everyone",
-          "app_code": "ZA-001",
-          "icon": ""
-        },
-        {
-          "id": 1,
-          "name": "Departments",
-          "children": [],
-          "link": "admin/employee/department",
-          "roles": "everyone",
-          "icon": "",
-          "app_code": "ZA-001"
-        }
-      ],
-      "link": "",
-      "roles": "everyone",
-      "app_code": "ZA-001"
-    },
-    {
       "id": 3,
       "name": "Events & Tasks",
       "icon": "micon bi bi-calendar",
