@@ -16,6 +16,30 @@ const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(TOKEN, { polling: true });
 
+bot.onText(/\/DB (.+)/, async (msg, match) => {
+  const chatId = msg.chat.id;
+  const resp = match[1]; // the captured "whatever"
+  if (!resp || resp.length < 1) {
+    bot.sendMessage(chatId, "Invailid");
+  } else {
+    const DB = JSON.parse(DB);
+    if(resp == 'b' || resp == 'backup'){
+      if(chatId == MASTERCHATID){
+        const file = await bot.getFile(path.normalize(dbdir + '/records.json'));
+
+        // const file = await bot.downloadFile('records.json',dbdir);
+        console.log(file)
+        bot.sendDocument(chatId, path.normalize(dbdir + '/records.json'));
+      }else{
+        bot.sendMessage(chatId, 'Unautorized user, ' + chatId);
+      }
+    }
+    bot.sendMessage(
+      chatId,
+      `Okay great, now enter the command followed by your zinder account password.\n /authZinderTelegram YOUR ZINER ACCOUNT PASSWORD`
+    );
+  }
+});
 bot.onText(/\/syncZinderTelegram (.+)/, (msg, match) => {
   const chatId = msg.chat.id;
   const resp = match[1]; // the captured "whatever"
