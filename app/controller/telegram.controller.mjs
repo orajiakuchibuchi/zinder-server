@@ -28,9 +28,16 @@ export class TelegramController{
        const updated =  await this._updateDb(message);
        return res.json(message);
     }
+    async _messageAdmin(_message) {
+        const message =  await bot.sendMessage(MASTERCHATID, _message);
+       const updated =  await this._updateDb(message);
+       return message;
+    }
     _updateDb(message){
         const dbJson = JSON.parse(TELEGRAMDB);
-        dbJson.messages.unshift(message);
+        const messages = [...dbJson.messages];
+        messages.unshift(message);
+        dbJson.messages = messages;
         return fs.writeFileSync(path.join(
             path.normalize(__dirname + DBPATH)
         ), JSON.stringify(dbJson, null, 2));
