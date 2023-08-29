@@ -13,6 +13,8 @@ import fileDirName from './file-dir-name.mjs';
 import crons from "./app/cron/index.mjs";
 import bot from "./app/service/telegram.service.mjs";
 import { ContactController } from "./app/controller/contact.controller.mjs";
+import { TelegramController } from "./app/controller/telegram.controller.mjs";
+import { BookingController } from "./app/controller/booking.controller.mjs";
 
 dotenv.config();
 
@@ -25,6 +27,8 @@ const SERVER_NAME = process.env.SERVER_NAME;
 const SERVER_URL = process.env.SERVER_URL; 
 const passageConfig = { appID: process.env.PASSAGE_APP_ID, apiKey: process.env.PASSAGE_API_KEY};
 const contact = new ContactController();
+const telegram = new TelegramController();
+const bookings = new BookingController();
 // JSON Server Router
 const router = JsonServer.router(DB);
 const app = JsonServer.create();
@@ -123,6 +127,8 @@ app.get('/my-events/who_like=:who_like', (req, res) => {
 
 app.get('/contacts/who_like=:who_like', (req, res) => contact.myContacts(req, res))
 app.post('/contacts', (req, res) => contact.myContacts(req, res))
+app.post('/telegram-message-admin', (req, res) => telegram.messageAdmin(req, res))
+app.post('/bookings', (req, res) => bookings.create(req, res))
 
 
 app.get('/my-conversations/who_like=:who_like', (req, res) => {
