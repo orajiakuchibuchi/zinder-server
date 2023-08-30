@@ -50,40 +50,7 @@
       "id": 7
     }
   ],
-  "jobPositions": [
-    {
-      "who": "ZU-7698",
-      "title": "Junior Developer",
-      "code": "ZJP-8246",
-      "department_id": "SE-Dept",
-      "description": "<div>We are looking for an enthusiastic junior software developer to join our experienced software design team. You will report directly to the development manager and assist with all functions of software coding and design. Your primary focus will be to learn the codebase, gather user data, and respond to requests from senior developers.</div><div><br></div><div>To ensure success as a junior software developer, you should have a good working knowledge of basic programming languages, the ability to learn new technology quickly, and the ability to work in a team environment. Ultimately, a top-class Junior Software Developer provides valuable support to the design team while continually improving their coding and design skills.</div>",
-      "responsibility": "<div>Assisting the development manager with all aspects of software design and coding.</div><div>Attending and contributing to company development meetings.</div><div>Learning the codebase and improving your coding skills.</div><div>Writing and maintaining code.</div><div>Working on minor bug fixes.</div><div>Monitoring the technical performance of internal systems.</div><div>Responding to requests from the development team.</div><div>Gathering information from consumers about program functionality.</div><div>Writing reports.</div><div>Conducting development tests.</div>",
-      "created_at": "2023-08-05T04:42:24.045Z",
-      "updated_at": "2023-08-05T04:42:24.045Z",
-      "working_hours": "",
-      "salary": 150000,
-      "commission": "",
-      "pay_type": "salary",
-      "job_type": "Hybrid",
-      "base_earning": 100000,
-      "max_earning": 250000,
-      "promotable": true,
-      "required_documents": [
-        "CV"
-      ],
-      "optional_documents": [
-        "Cover Letter Upload"
-      ],
-      "company": "ZC-65311176",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
-      "browserVersion": "115.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 1
-    }
-  ],
+  "jobPositions": [],
   "jobOpenings": [
     {
       "who": "ZU-7698",
@@ -292,95 +259,48 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 6
-    }
-  ],
-  "company-selected": [],
-  "departments": [
-    {
-      "name": "HR",
-      "code": "HR889",
-      "created_at": "2023-06-30T13:54:49.747Z",
-      "updated_at": "2023-06-30T13:54:49.747Z",
-      "hod": null,
-      "status": "Active",
-      "id": 1
     },
     {
-      "name": "Software Department",
-      "code": "SE-Dept",
-      "created_at": "2023-07-05T13:17:35.761Z",
-      "updated_at": "2023-07-05T13:17:35.761Z",
-      "hod": null,
+      "who": "ZU-27437",
+      "name": "Morrhtech Solution Red",
+      "website": "MorrhtechSolution.com",
+      "logo": "https://zinder-file-server.onrender.com/v/3-7-2023/1693373549869-cross.png",
+      "country": "Nigeria",
+      "address": "G close, Festac Town, Lagos",
+      "cerated_at": "2023-08-30T05:32:32.840Z",
+      "updated_at": "2023-08-30T05:32:32.840Z",
       "status": "Active",
-      "id": 2
-    },
-    {
-      "name": "HardWare Department",
-      "code": "HD-Dept",
-      "created_at": "2023-07-05T13:18:07.778Z",
-      "updated_at": "2023-07-05T13:18:07.778Z",
-      "hod": null,
-      "status": "Active",
-      "id": 3
-    },
-    {
-      "name": "Administrative Department",
-      "code": "AD-Dept",
-      "created_at": "2023-07-05T13:20:06.700Z",
-      "updated_at": "2023-07-05T13:20:06.700Z",
-      "hod": null,
-      "status": "Active",
-      "id": 4
-    },
-    {
-      "name": "Art Department",
-      "code": "DP-453",
-      "created_at": "2023-07-16T10:39:03.488Z",
-      "updated_at": "2023-07-16T10:39:03.488Z",
-      "hod": null,
-      "status": "Active",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-      "browserVersion": "114.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "who": "ZU-23829",
-      "id": 5
-    },
-    {
-      "name": "Sport Department",
-      "code": "DP-232",
-      "created_at": "2023-07-16T10:41:51.950Z",
-      "updated_at": "2023-07-16T10:41:51.950Z",
-      "hod": null,
-      "status": "Active",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-      "browserVersion": "114.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "who": "ZU-23829",
-      "id": 6
-    },
-    {
-      "who": "ZU-23829",
-      "name": "Accounting Department",
-      "code": "DP-A93",
-      "created_at": "2023-07-16T10:44:40.384Z",
-      "updated_at": "2023-07-16T10:44:40.384Z",
-      "hod": null,
-      "status": "Active",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-      "browserVersion": "114.0.0.0",
+      "code": "ZC-81892816",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "browserVersion": "116.0.0.0",
       "os": "Windows",
       "osVersion": "windows-10",
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 7
+    },
+    {
+      "who": "ZU-64218",
+      "name": " ezebinafor ",
+      "website": "MorrhtechSolution.com",
+      "logo": "https://zinder-file-server.onrender.com/v/3-7-2023/1693376613865-cross.png",
+      "country": "Nigeria",
+      "address": "Rd 201, D Close, Festac Town,Lagos, Nigeria",
+      "cerated_at": "2023-08-30T06:23:42.992Z",
+      "updated_at": "2023-08-30T06:23:42.992Z",
+      "status": "Active",
+      "code": "ZC-56654209",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "browserVersion": "116.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 8
     }
   ],
+  "company-selected": [],
+  "departments": [],
   "menus": [
     {
       "id": 0,
@@ -471,6 +391,24 @@
       "icon": "micon bi bi-calendar2-week-fill",
       "children": [],
       "link": "admin/calendar",
+      "roles": "everyone",
+      "app_code": "ZA-001"
+    },
+    {
+      "id": 1802,
+      "name": "Department",
+      "icon": "micon bi bi-diagram-3-fill",
+      "children": [],
+      "link": "admin/employee/department",
+      "roles": "everyone",
+      "app_code": "ZA-001"
+    },
+    {
+      "id": 1802232,
+      "name": "Employees",
+      "icon": "micon bi bi-file-earmark-person",
+      "children": [],
+      "link": "admin/employee",
       "roles": "everyone",
       "app_code": "ZA-001"
     },
@@ -710,8 +648,8 @@
       },
       "company": "ZC-15866111",
       "code": "ZinTranz-EI-037-ZC-15866111-1691270956498-67308",
-      "created_at": "2024-08-05T21:29:16.497Z",
-      "updated_at": "2024-08-05T21:29:16.497Z",
+      "created_at": "2023-08-05T21:29:16.497Z",
+      "updated_at": "2023-08-05T21:29:16.497Z",
       "expires_at": "2024-08-05T21:29:16.497Z",
       "status": "Active",
       "type": "App",
@@ -754,8 +692,8 @@
       },
       "company": "ZC-91592963",
       "code": "ZinTranz-ZU-50908-ZC-91592963-1691283435228-65917",
-      "created_at": "2024-08-06T00:57:15.228Z",
-      "updated_at": "2024-08-06T00:57:15.228Z",
+      "created_at": "2023-08-06T00:57:15.228Z",
+      "updated_at": "2023-08-06T00:57:15.228Z",
       "expires_at": "2024-08-06T00:57:15.228Z",
       "status": "Active",
       "type": "App",
@@ -798,8 +736,8 @@
       },
       "company": "ZC-60862492",
       "code": "ZinTranz-ZU-76788-ZC-60862492-1691297441377-75960",
-      "created_at": "2024-08-06T04:50:41.377Z",
-      "updated_at": "2024-08-06T04:50:41.377Z",
+      "created_at": "2023-08-06T04:50:41.377Z",
+      "updated_at": "2023-08-06T04:50:41.377Z",
       "expires_at": "2024-08-06T04:50:41.377Z",
       "status": "Active",
       "type": "App",
@@ -842,8 +780,8 @@
       },
       "company": "ZC-65311176",
       "code": "ZinTranz-ZU-7698-ZC-65311176-1691297812466-81069",
-      "created_at": "2024-08-06T04:56:52.466Z",
-      "updated_at": "2024-08-06T04:56:52.466Z",
+      "created_at": "2023-08-06T04:56:52.466Z",
+      "updated_at": "2023-08-06T04:56:52.466Z",
       "expires_at": "2024-08-06T04:56:52.466Z",
       "status": "Active",
       "type": "App",
@@ -886,8 +824,8 @@
       },
       "company": "ZC-45272667",
       "code": "ZinTranz-ZU-23829-ZC-45272667-1691766787071-17684",
-      "created_at": "2024-08-11T15:13:07.071Z",
-      "updated_at": "2024-08-11T15:13:07.071Z",
+      "created_at": "2023-08-11T15:13:07.071Z",
+      "updated_at": "2023-08-11T15:13:07.071Z",
       "expires_at": "2024-08-11T15:13:07.071Z",
       "status": "Active",
       "type": "App",
@@ -898,6 +836,50 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 5
+    },
+    {
+      "who": "ZU-27437",
+      "app": {
+        "short_name": "HR Solution",
+        "long_name": "Human Resource Solution App",
+        "status": "Active",
+        "code": "ZA-001",
+        "fee": 50000,
+        "icon": "assets/img/human-resources.png",
+        "created_at": "2023-06-09T22:40:10.840Z",
+        "updated_at": "2023-06-09T22:40:10.840Z",
+        "id": 1
+      },
+      "transaction": {
+        "status": "successful",
+        "customer": {
+          "name": "Dev ",
+          "email": "dev@morrhtechsolutions.com"
+        },
+        "transaction_id": 4561718,
+        "tx_ref": "APPSUB-323517026254638",
+        "flw_ref": "FLW-MOCK-676b1adafe7391585189eda9efa44d93",
+        "currency": "NGN",
+        "amount": 50000,
+        "charged_amount": 50000,
+        "charge_response_code": "00",
+        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
+        "created_at": "2023-08-30T05:33:30.000Z"
+      },
+      "company": "ZC-81892816",
+      "code": "ZinTranz-ZU-27437-ZC-81892816-1693373651220-32703",
+      "created_at": "2023-08-30T05:34:11.220Z",
+      "updated_at": "2023-08-30T05:34:11.220Z",
+      "expires_at": "2024-08-30T05:34:11.220Z",
+      "status": "Active",
+      "type": "App",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "browserVersion": "116.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 6
     }
   ],
   "apps": [
@@ -1115,18 +1097,18 @@
     },
     {
       "who": "GUEST",
-      "firstName": "Developer",
-      "lastName": "AccDev",
+      "firstName": "Dev",
+      "lastName": "Morry",
       "country": "UK",
-      "phone": "098239292",
+      "phone": "098328277",
       "email": "dev@morrhtechsolutions.com",
-      "code": "ZU-85731",
+      "code": "ZU-27437",
       "password": "password",
       "role": [
         "Admin"
       ],
-      "created_at": "2023-08-29T13:47:51.230Z",
-      "updated_at": "2023-08-29T13:47:51.230Z",
+      "created_at": "2023-08-30T05:29:06.505Z",
+      "updated_at": "2023-08-30T05:29:06.505Z",
       "status": "Active",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
       "browserVersion": "116.0.0.0",
@@ -52417,6 +52399,51 @@
       "created_at": "2023-08-25T16:18:31.842Z",
       "updated_at": "2023-08-25T16:18:31.842Z",
       "id": 13
+    },
+    {
+      "recipient": {
+        "who": "GUEST",
+        "firstName": "Dev",
+        "lastName": "Morry",
+        "country": "UK",
+        "phone": "098328277",
+        "email": "dev@morrhtechsolutions.com",
+        "code": "ZU-27437",
+        "password": "password",
+        "role": [
+          "Admin"
+        ],
+        "created_at": "2023-08-30T05:29:06.505Z",
+        "updated_at": "2023-08-30T05:29:06.505Z",
+        "status": "Active",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+        "browserVersion": "116.0.0.0",
+        "os": "Windows",
+        "osVersion": "windows-10",
+        "browser": "Chrome",
+        "deviceOrientation": "landscape",
+        "id": 17
+      },
+      "who": {
+        "firstName": "Chibuchi",
+        "code": "ZU-23829",
+        "lastName": "Orajiaku",
+        "country": "UK",
+        "phone": "09130202",
+        "email": "somtobuchi@gmail.com",
+        "password": "Somtobuchi1991!",
+        "created_at": "2023-05-24T02:42:56.464Z",
+        "updated_at": "2023-05-24T02:42:56.464Z",
+        "role": [
+          "Master"
+        ],
+        "status": "Active",
+        "id": 1
+      },
+      "status": "Active",
+      "created_at": "2023-08-30T09:59:36.885Z",
+      "updated_at": "2023-08-30T09:59:36.885Z",
+      "id": 14
     }
   ],
   "profile": {

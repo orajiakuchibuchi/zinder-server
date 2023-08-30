@@ -4,8 +4,10 @@ import path from "path";
 import fs from "fs";
 import fileDirName from "./../../file-dir-name.mjs";
 import dotenv from "dotenv";
-import DB from "../../db/index.mjs";
 const { __dirname } = fileDirName(import.meta);
+
+const DBPATH = "/../../db/records.json";
+const DB = path.normalize(__dirname + DBPATH);
 dotenv.config();
 const dbdir = path.normalize(`${__dirname}/../../db`);
 // Known master Chat ID
@@ -19,16 +21,18 @@ const bot = new TelegramBot(TOKEN, { polling: true });
 bot.onText(/\/DB (.+)/, async (msg, match) => {
   const chatId = msg.chat.id;
   const resp = match[1]; // the captured "whatever"
+  console.log(resp);
+  console.log(chatId);
+  bot.sendMessage(chatId, "Invailid");
+
   if (!resp || resp.length < 1) {
     bot.sendMessage(chatId, "Invailid");
   } else {
-    const DB = JSON.parse(DB);
     if(resp == 'b' || resp == 'backup'){
       if(chatId == MASTERCHATID){
         const file = await bot.getFile(path.normalize(dbdir + '/records.json'));
-
         // const file = await bot.downloadFile('records.json',dbdir);
-        console.log(file)
+        console.log(dbdir)
         bot.sendDocument(chatId, path.normalize(dbdir + '/records.json'));
       }else{
         bot.sendMessage(chatId, 'Unautorized user, ' + chatId);
@@ -91,7 +95,7 @@ bot.onText(/\/authZinderTelegram (.+)/, (msg, match) => {
 // messages.
 bot.on("message", (msg) => {
   const chatId = msg.chat.id;
-  console.log(chatId);
+  // console.log(chatId);
   // send a message to the chat acknowledging receipt of their message
   bot.sendMessage(chatId, "Received your message");
 });
