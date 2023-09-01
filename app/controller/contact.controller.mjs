@@ -23,9 +23,7 @@ export class ContactController{
         const contacts = dbJson.contacts;
         if (req.method === 'POST') {
             if(!req.body.who){
-                return res.status(500).json({
-                    message: 'Who is creating this contact? ensure to have a valid user code added to request<Contact Dev team>.'
-                })
+                a
             }
             if(!req.body.recipient){
                 return res.status(500).json({

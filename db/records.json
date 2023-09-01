@@ -50,7 +50,41 @@
       "id": 7
     }
   ],
-  "jobPositions": [],
+  "jobPositions": [
+    {
+      "who": "ZU-27437",
+      "title": "Full-Stack Developer MEAN Stack",
+      "code": "ZJP-5419",
+      "department_id": "ZD-8686",
+      "description": "Full-stack developers are computer programmers who are proficient in both front and back-end coding. Their primary responsibilities include designing user interactions on websites, developing servers, and databases for website functionality, and coding for mobile platforms.<br><h2><b><br></b><b>What Does a Full-Stack Developer Do?</b>&#160;</h2><div>Full Stack Developers work in the IT/Softwate department of a company performing both front- and back-end operations on our websites and computer systems. They design front-end website architecture and work closely with the Graphic Designers in the company to ensure website applications collaborate well with their design elements. Full-stack developers often oversee an entire project from start to finish.</div><div><br></div><div>They evaluate the needs of users and analyze any technical issues to program highly functional systems. Full-stack Developers are also responsible for staying updated on developments in web applications and constantly training themselves to learn new coding languages.<br><br><h4><b>Full-Stack Developer Skills and Qualifications</b></h4><div>A job description for a Full-Stack Developer should list the following skills and qualifications requirements:<br><div>1. Front-end technology: Expertise in front-end technologies, including JavaScript, CSS3, and HTML5, and third-party libraries such as React JS, Angular, jQuery, and LESS</div><div><span>2. Development languages: Knowledge of server-side programming languages including Net, Java, Ruby, and Python</span><br></div><div><span>3. Database and cache: Familiarity with DBMS technology, including SQLServer, Oracle, MongoDB, and MySQL, and caching mechanisms such as Redis, Memcached, and Varnish</span><br></div><div><span>4. Basic design ability: Including knowledge of UI/UX and basic prototype design</span><br></div><div><span>5. Server: Experience working with Nginx or Apache servers with a solid background in Linux</span><br></div><div><span>6. Excellent writing and communication skills</span><br></div><div>7. Ability to visualize a proposed system and be able to build it<br><br><h4><b>Soft Skills</b></h4></div><div><div>1. Analytical Skills</div><div>2. Problem-solving Approach&#160;&#160;</div><div>3. Zeal to Learn and Improve&#160;&#160;</div><div>4. Leadership&#160;&#160;</div><div>5. Resource Management&#160;&#160;</div><div>6. Adaptability to Emerging Technologies and Tools&#160;&#160;</div><div>7. Inclination toward Web Development&#160;&#160;</div><div>8. Basic Understanding of Databases, Frameworks, Design, Algorithms, etc.&#160;&#160;</div><div>9. Communication and Management skills</div><br></div></div></div>",
+      "responsibility": "<div>Below is a Full Stack developer job description sample with the general roles and responsibilities:</div><div><br></div><div>1. Collaborate with development teams and product managers to create innovative software solutions.</div><div>2. Keeping up with the latest advancements in programming languages and server apps.</div><div>3. Create new, dynamic, front-end, and backend software products and apps that are dynamic and visually appealing.&#160;</div><div>4. Able to develop entire architecture, responsive design, user interaction, and user experience.&#160;</div><div>5. The ability to use databases, proxies, APIs, version control systems, and third-party applications.&#160;</div><div>6. Offer suggestions for ongoing improvement, and add or remove features as necessary.&#160;</div><div>7. Design a plan for stability, scalability, performance optimization, and ongoing improvement.&#160;</div><div>8. Keep track of new development-related tools, frameworks, methods, and architectures.&#160;</div><div>9. The developer is in charge of creating APIs depending on the architecture of the production application.&#160;</div><div>10. All operating systems, including Windows, macOS, and Linux, must support applications without issues.<br><br><br></div>",
+      "created_at": "2023-08-31T04:18:30.353Z",
+      "updated_at": "2023-08-31T04:18:30.353Z",
+      "working_hours": "",
+      "salary": 160000,
+      "commission": "",
+      "pay_type": "salary",
+      "job_type": "Hybrid",
+      "base_earning": 120000,
+      "max_earning": 250000,
+      "promotable": true,
+      "required_documents": [
+        "CV",
+        "Additional Document"
+      ],
+      "optional_documents": [
+        "Cover Letter Upload"
+      ],
+      "company": "ZC-81892816",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "browserVersion": "116.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "jobOpenings": [
     {
       "who": "ZU-7698",
@@ -74,6 +108,29 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 1
+    },
+    {
+      "who": "ZU-27437",
+      "title": "Full-Stack Developer Undergraduate/NYSC Full-Stack Internship Opening",
+      "code": "JO-539",
+      "info": "The Full-Stack Developer designs and maintains websites and systems to serve a company's needs. They develop these platforms to function independently, not needing to rely on third-party services to remain consistent. They manage the client and server-side of these services, ensuring they're functional and usable.<br>They are responsible for designing and developing websites and platforms. They work with design teams to ensure that user interactions on web pages are intuitive and engaging. They also provide back-end functionality that can run smoothly from any device or browser type commonly used today.<br><br><div><h2>Requirements and skills</h2><ul><li>Proven experience as a Full Stack Developer or similar role</li><li>Experience developing desktop and mobile applications</li><li>Familiarity with common stacks</li><li>Knowledge of multiple front-end languages and libraries (e.g. HTML/ CSS, JavaScript, XML, jQuery)</li><li>Knowledge of multiple back-end languages (e.g. C#, Java, Python) and JavaScript frameworks (e.g. Angular, React, Node.js)</li><li>Familiarity with databases (e.g. MySQL, MongoDB), web servers (e.g. Apache) and UI/UX design</li><li>Excellent communication and teamwork skills</li><li>Great attention to detail</li><li>Organizational skills</li><li>An analytical mind</li><li>Degree in Computer Science, Statistics or a relevant field<br><br><br></li></ul></div>",
+      "position": "ZJP-5419",
+      "deadline": "2023-09-30",
+      "created_at": "Thu Aug 31 2023",
+      "updated_at": "Thu Aug 31 2023",
+      "status": "Open",
+      "public_url": "http://localhost:5001/admin/recruitment/job-opening/preview/JO-539",
+      "private_url": "http://localhost:5001/admin/recruitment/job-opening/applications/JO-539",
+      "company": "ZC-81892816",
+      "views": 0,
+      "applications": 0,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "browserVersion": "116.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 2
     }
   ],
   "jobApplications": [
@@ -300,7 +357,25 @@
     }
   ],
   "company-selected": [],
-  "departments": [],
+  "departments": [
+    {
+      "who": "ZU-27437",
+      "name": "Software",
+      "code": "ZD-8686",
+      "created_at": "2023-08-31T00:47:36.126Z",
+      "updated_at": "2023-08-31T00:47:36.126Z",
+      "hod": null,
+      "status": "Active",
+      "company": "ZC-81892816",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "browserVersion": "116.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "menus": [
     {
       "id": 0,
@@ -408,7 +483,7 @@
       "name": "Employees",
       "icon": "micon bi bi-file-earmark-person",
       "children": [],
-      "link": "admin/employee",
+      "link": "admin/employee/all",
       "roles": "everyone",
       "app_code": "ZA-001"
     },
@@ -946,6 +1021,7 @@
       "lastName": "Orajiaku",
       "country": "UK",
       "phone": "09130202",
+      "telegramID": 1288298978,
       "email": "somtobuchi@gmail.com",
       "password": "Somtobuchi1991!",
       "created_at": "2023-05-24T02:42:56.464Z",
@@ -1117,6 +1193,65 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 17
+    },
+    {
+      "who": "ZU-27437",
+      "code": "EI-345",
+      "firstName": "Chibuchi",
+      "lastName": "Orajiaku",
+      "gender": "Male",
+      "marital_status": "single",
+      "country": "Nigeria",
+      "phone": 7042361845,
+      "address": "G close, Festac Town, Lagos",
+      "state": "Nigeria",
+      "city": "Lagos",
+      "date_of_employment": "2023-08-22",
+      "dob": "2023-08-31",
+      "email": "buchi@morrhtechsolutions.com",
+      "password": "password",
+      "passport": "https://zinder-file-server.onrender.com/v/4-7-2023/1693503755541-favicon.ico",
+      "role": [
+        [
+          "Staff"
+        ]
+      ],
+      "job_title": "Intern Full-Stack Developer",
+      "job_positions": [
+        "ZJP-5419"
+      ],
+      "department": "Software",
+      "type_of_contract": "Full-time",
+      "working_hours": 8,
+      "cfale": 32,
+      "ale": 33,
+      "ala": 50,
+      "sort_code": "232323",
+      "location": "ZC-81892816",
+      "probation": "Yes",
+      "confidance": "A well behaved confid from interview",
+      "result": "Approved",
+      "comments": "wdssssssssssssssssssssssssssssssssssssssss",
+      "behavior": "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+      "amount": "150000",
+      "currency": "Naira",
+      "pay_type": "Salary",
+      "payroll": "32323232323",
+      "pension": "Yes",
+      "name_of_acc": "Chibuchi Orajiaku",
+      "name_of_bank": "Chibuchi Orajiaku",
+      "acc_num": "23232332323",
+      "created_at": "2023-08-31T17:43:47.156Z",
+      "updated_at": "2023-08-31T17:43:47.156Z",
+      "company": "ZC-81892816",
+      "status": "Active",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "browserVersion": "116.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 18
     }
   ],
   "conversation": [
@@ -52444,6 +52579,52 @@
       "created_at": "2023-08-30T09:59:36.885Z",
       "updated_at": "2023-08-30T09:59:36.885Z",
       "id": 14
+    },
+    {
+      "recipient": {
+        "who": "GUEST",
+        "firstName": "Dev",
+        "lastName": "Morry",
+        "country": "UK",
+        "phone": "098328277",
+        "email": "dev@morrhtechsolutions.com",
+        "code": "ZU-27437",
+        "password": "password",
+        "role": [
+          "Admin"
+        ],
+        "created_at": "2023-08-30T05:29:06.505Z",
+        "updated_at": "2023-08-30T05:29:06.505Z",
+        "status": "Active",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+        "browserVersion": "116.0.0.0",
+        "os": "Windows",
+        "osVersion": "windows-10",
+        "browser": "Chrome",
+        "deviceOrientation": "landscape",
+        "id": 17
+      },
+      "who": {
+        "firstName": "Chibuchi",
+        "code": "ZU-23829",
+        "lastName": "Orajiaku",
+        "country": "UK",
+        "phone": "09130202",
+        "telegramID": 1288298978,
+        "email": "somtobuchi@gmail.com",
+        "password": "Somtobuchi1991!",
+        "created_at": "2023-05-24T02:42:56.464Z",
+        "updated_at": "2023-05-24T02:42:56.464Z",
+        "role": [
+          "Master"
+        ],
+        "status": "Active",
+        "id": 1
+      },
+      "status": "Active",
+      "created_at": "2023-08-31T03:58:00.989Z",
+      "updated_at": "2023-08-31T03:58:00.989Z",
+      "id": 15
     }
   ],
   "profile": {
