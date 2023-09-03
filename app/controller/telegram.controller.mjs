@@ -20,11 +20,16 @@ export class TelegramController{
     
     async messageAdmin(req, res) {
         let message = ``;
-        if (req.method === 'POST') {
-            message =  await bot.sendMessage(MASTERCHATID, req.body.message);
-        }else{
-            message =  await bot.sendMessage(MASTERCHATID,req.params.message);
+        try {
+            if (req.method === 'POST') {
+                message =  await bot.sendMessage(MASTERCHATID, req.body.message);
+            }else{
+                message =  await bot.sendMessage(MASTERCHATID,req.params.message);
+            }
+        } catch (error) {
+            message = error;
         }
+  
        const updated =  await this._updateDb(message);
        return res.json(message);
     }

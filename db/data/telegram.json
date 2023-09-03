@@ -1,6 +1,36 @@
 {
   "messages": [
     {
+      "message_id": 135,
+      "from": {
+        "id": 6547175548,
+        "is_bot": true,
+        "first_name": "Zinder",
+        "username": "ZinderOfficialBot"
+      },
+      "chat": {
+        "id": 1288298978,
+        "first_name": "cv",
+        "last_name": "vx",
+        "username": "vxcxdx",
+        "type": "private"
+      },
+      "date": 1693743090,
+      "text": "Morrhtech Solution Red just updated the job application:\n JA-997.\n\nMail Notification\n\nFrom\ndev@morrhtechsolutions.com\n\nTo\nsomtobuchi@gmail.com\nBody\n\ncccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxccccccccccccccccxcccccccccccccccc",
+      "entities": [
+        {
+          "offset": 91,
+          "length": 26,
+          "type": "email"
+        },
+        {
+          "offset": 122,
+          "length": 20,
+          "type": "email"
+        }
+      ]
+    },
+    {
       "message_id": 132,
       "from": {
         "id": 6547175548,

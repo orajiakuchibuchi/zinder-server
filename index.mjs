@@ -130,7 +130,7 @@ app.get('/my-events/who_like=:who_like', (req, res) => {
 app.post('/employees', (req, res) => userController.getEmployees(req, res))
 app.get('/contacts/who_like=:who_like', (req, res) => contact.myContacts(req, res))
 app.post('/contacts', (req, res) => contact.myContacts(req, res))
-app.post('/telegram-message-admin', (req, res) => telegram.messageAdmin(req, res))
+app.post('/telegram-message-admin', async (req, res) => await telegram.messageAdmin(req, res))
 app.post('/bookings', (req, res) => bookings.create(req, res))
 
 
