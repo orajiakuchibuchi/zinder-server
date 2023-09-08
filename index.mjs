@@ -16,6 +16,7 @@ import { ContactController } from "./app/controller/contact.controller.mjs";
 import { TelegramController } from "./app/controller/telegram.controller.mjs";
 import { BookingController } from "./app/controller/booking.controller.mjs";
 import { UserController } from "./app/controller/user.controller.mjs";
+import { AttendanceController } from "./app/controller/attendance.controller.mjs";
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ const contact = new ContactController();
 const telegram = new TelegramController();
 const bookings = new BookingController();
 const userController = new UserController();
+const attendanceController = new AttendanceController();
 // JSON Server Router
 const router = JsonServer.router(DB);
 const app = JsonServer.create();
@@ -131,6 +133,7 @@ app.post('/employees', (req, res) => userController.getEmployees(req, res))
 app.get('/contacts/who_like=:who_like', (req, res) => contact.myContacts(req, res))
 app.post('/contacts', (req, res) => contact.myContacts(req, res))
 app.post('/telegram-message-admin', async (req, res) => await telegram.messageAdmin(req, res))
+app.post('/appointment-schedule', async (req, res) => attendanceController.create(req, res))
 app.post('/bookings', (req, res) => bookings.create(req, res))
 
 

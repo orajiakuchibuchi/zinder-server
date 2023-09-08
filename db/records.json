@@ -1,4 +1,63 @@
 {
+  "schedule": [
+    {
+      "who": "ZU-54429",
+      "days": {
+        "monday": {
+          "checkIn": "02:00 AM",
+          "checkOut": "11:00 AM",
+          "status": true
+        },
+        "tuesday": {
+          "checkIn": null,
+          "checkOut": null,
+          "status": false
+        },
+        "wednesday": {
+          "checkIn": null,
+          "checkOut": null,
+          "status": false
+        },
+        "thursday": {
+          "checkIn": null,
+          "checkOut": null,
+          "status": false
+        },
+        "friday": {
+          "checkIn": null,
+          "checkOut": null,
+          "status": false
+        },
+        "saturday": {
+          "checkIn": null,
+          "checkOut": null,
+          "status": false
+        },
+        "sunday": {
+          "checkIn": null,
+          "checkOut": null,
+          "status": false
+        }
+      },
+      "weekly": false,
+      "participant": "ZU-54429",
+      "created_at": "2023-09-07T10:18:21.896Z",
+      "updated_at": "2023-09-07T10:18:21.896Z",
+      "company": "ZC-10919417",
+      "creator": "ZU-54429",
+      "type": "schedule",
+      "code": "ZSchedu-Schedule1694081901804",
+      "notifified": false,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+      "browserVersion": "116.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
+  "attendance": [],
   "roles": [
     {
       "name": "Master",

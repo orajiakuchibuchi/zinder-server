@@ -16,7 +16,8 @@ const MASTERCHATID = process.env.TELEGRAM_MASTERCHATID;
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 
 // Create a bot that uses 'polling' to fetch new updates
-const bot = new TelegramBot(TOKEN, { polling: true });
+const bot = new TelegramBot(TOKEN, { polling: !process.env.DEV });
+// const bot = new TelegramBot(TOKEN);
 
 bot.onText(/\/DB (.+)/, async (msg, match) => {
   const chatId = msg.chat.id;
