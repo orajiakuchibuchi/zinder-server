@@ -1,35 +1,77 @@
 import bodyParser from "body-parser"; // importing body parser middleware to parse form content from HTML
 import nodemailer from "nodemailer"; //importing node mailer
+import { make } from "simple-body-validator";
+import DB from "../../db/index.mjs";
+import fileDirName from "../../file-dir-name.mjs";
+import fs from "fs";
+import path from "path";
 
+import * as lt from "log-timestamp";
+const DBPATH = "/../../db/records.json";
+const { __dirname } = fileDirName(import.meta);
 
 export class MailController {
-    router;
-    totalEmailBefloreLastRestart= 0;
-    totalEmailFailBefloreLastRestart= 0;
-    transporter;
-    constructor(express){
-        this.router = express.Router();
-        this.router.use(bodyParser.json());
-        this.router.use(bodyParser.urlencoded({
-            extended: false
-        }));
-    }
-    _main(req){
-      // from
-      // to
-      // subject
-      // bcc?
-      // html?
-      // host
-      // port
-      // auth.user
-      // auth.pass
-        var mailOptions = {
-            from: req.body.from, //replace with your email
-            to: req.body.to,
-            subject: req.body.subject,
-            bcc: req.body.bcc,
-            html:( req.body.html &&  req.body.html.length > 0) ? req.body.html : `
+  router;
+  totalEmailBefloreLastRestart = 0;
+  totalEmailFailBefloreLastRestart = 0;
+  transporter;
+  buttonPressesLogFile = DBPATH;
+  constructor(express) {
+    this.router = express.Router();
+    this.router.use(bodyParser.json());
+    this.router.use(
+      bodyParser.urlencoded({
+        extended: false,
+      })
+    );
+    this.watchdb();
+  }
+  static get mailDB() {
+    return JSON.parse(DB).mail;
+  }
+
+  static get allSchedules() {
+    return JSON.parse(DB).mail;
+  }
+
+  get mailDB() {
+    return JSON.parse(DB).mail;
+  }
+  watchdb() {
+    console.log(`Watching for file changes on ${this.buttonPressesLogFile}`);
+
+    fs.watch(
+      path.join(path.normalize(__dirname + DBPATH)),
+      (event, filename) => {
+        if (filename) {
+          console.log(`${filename} file Changed`);
+        }
+      }
+    );
+  }
+
+  get allMails() {
+    return JSON.parse(DB).mail;
+  }
+  _main(req) {
+    // from
+    // to
+    // subject
+    // bcc?
+    // html?
+    // host
+    // port
+    // auth.user
+    // auth.pass
+    var mailOptions = {
+      from: req.body.from, //replace with your email
+      to: req.body.to,
+      subject: req.body.subject,
+      bcc: req.body.bcc,
+      html:
+        req.body.html && req.body.html.length > 0
+          ? req.body.html
+          : `
             <!doctype html>
         <html>
           <head>
@@ -403,39 +445,86 @@ export class MailController {
             </table>
           </body>
         </html> `,
-          };
-        this.transporter = nodemailer.createTransport({
-            host: req.body.host,
-            port: req.body.port,
-            auth: {
-              user: req.body.auth.user, //replace with your email
-              pass: req.body.auth.pass, //replace with your password
-            },
-        });
-        return new Promise((resolve, reject) => {
-          return transporter.sendMail(mailOptions, (err, result) => {
-                if (err) {
-                    reject(err);
-                    return;
-                }
-                console.log("Message sent: %s", result.messageId);
-                resolve(result);
-           });
-        });
+    };
+    this.transporter = nodemailer.createTransport({
+      host: req.body.host,
+      port: req.body.port,
+      auth: {
+        user: req.body.auth.user, //replace with your email
+        pass: req.body.auth.pass, //replace with your password
+      },
+    });
+    return new Promise((resolve, reject) => {
+      return this.transporter.sendMail(mailOptions, (err, result) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        console.log("Message sent: %s", result.messageId);
+        resolve(result);
+      });
+    });
+  }
+  dispatch(req, res) {
+    const data = req.body;
+    const rules = {
+      subject: "required|string|min:2|max:100",
+      from: "required|email",
+      to: "required|email",
+      bcc: "required|email",
+      html: "string|min:2",
+      host: "required|string|min:2",
+      port: "required|string",
+      "auth.user": "required|email",
+      "auth.pass": "required|string",
+    };
+    const validator = make(data, rules);
+    if (!validator.validate()) {
+      let errors = validator.errors().all();
+      console.log("Errors: ", errors);
+      return res.status(500).send({ errors });
     }
-    dispatch(req,res){
-        return this._main(req).then(
-            result=>{
-              if (!result) {
-                console.log(result);
-                this.totalEmailBefloreLastRestart++;
-                res.send({result, message: 'Failed to send email'}); // if error occurs send error as response to client
-              } else {
-                totalEmailFailBefloreLastRestart++;
-                console.log("Email sent: " + result);
-                res.send({result, message: "Sent Successfully", response: result, created_at: new Date(Date.now()), updated_at: new Date(Date.now())}); //if mail is sent successfully send Sent successfully as response
-              }
-            }
-          );
-    }
+    return this._main(req).then((result) => {
+      if (!result) {
+        console.log(result);
+        this.totalEmailBefloreLastRestart++;
+        req.body.status = "Failed";
+        req.body.trials = 1;
+        this._create(req);
+        res.send({ result, message: "Failed to send email" }); // if error occurs send error as response to client
+      } else {
+        this.totalEmailFailBefloreLastRestart++;
+        req.body.status = "Sent";
+        req.body.trials = 1;
+        console.log("Email sent: " + result);
+        this._create(req);
+        res.send({
+          result,
+          message: "Sent Successfully",
+          response: result,
+          created_at: new Date(Date.now()),
+          updated_at: new Date(Date.now()),
+        }); //if mail is sent successfully send Sent successfully as response
+      }
+    });
+  }
+  _save(req) {}
+  _create(req) {
+    const now = new Date(Date.now());
+    const dbJson = JSON.parse(DB);
+    req.body.created_at = now;
+    req.body.updated_at = now;
+    const mails = this.allMails;
+    let latestId = mails.length < 1 ? 1 : mails.length + 1;
+    let newMail = req.body;
+    newMail.id = latestId;
+    mails.push(newMail);
+    dbJson.mail = mails;
+    const DBJSON = { ...dbJson };
+    fs.writeFileSync(
+      path.join(path.normalize(__dirname + DBPATH)),
+      JSON.stringify(DBJSON, null, 2)
+    );
+    return newMail;
+  }
 }

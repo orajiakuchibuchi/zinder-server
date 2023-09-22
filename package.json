@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.mjs",
-    "gitdeploy":"git add .;git commit -m 'deploying build';git push;",
-    "deploy":"git add . git commit -m `deploying build` git push;",
+    "startFs": "node FileServer.mjs",
+    "gitdeploy": "git add .;git commit -m 'deploying build';git push;",
+    "deploy": "git add . git commit -m `deploying build` git push;",
     "serve": "json-server ./db/records.json --routes route/api.json",
     "test": "echo \"Error: no sparkling-green-logo-rectangle.PNG test specified\" && exit 1"
   },
@@ -23,6 +24,7 @@
     "g": "^2.0.1",
     "hbs": "^4.2.0",
     "json-server": "^0.17.0",
+    "log-timestamp": "^0.3.0",
     "needle": "^3.2.0",
     "node-cron": "^3.0.0",
     "node-telegram-bot-api": "^0.61.0",
@@ -32,6 +34,7 @@
     "query-string": "^8.1.0",
     "request": "^2.88.2",
     "request-ip": "^3.3.0",
+    "simple-body-validator": "^1.2.13",
     "tinify": "^1.7.1"
   },
   "devDependencies": {

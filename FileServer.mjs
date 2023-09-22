@@ -23,6 +23,7 @@ app.use(express.static('public'));
 // });
 
 app.post('/upload', function(req, res) {
+  console.log("Getting file");
   let sampleFile;
   let uploadPath;
   let fileName = '';
@@ -57,6 +58,8 @@ app.post('/upload', function(req, res) {
 });
 
 app.post("/upload-v2", async (req, res) => {
+  console.log("Getting file");
+
   let uploadPath;
   let fileName = "";
   let message = "";
@@ -126,8 +129,8 @@ app.post("/upload-v2", async (req, res) => {
 app.post('/upload-multi', function(req, res) {
   let sampleFile;
   let uploadPath;
+  console.log("Getting file");
 
-  console.log(req)
   if (!req.files || Object.keys(req.files).length === 0) {
     return res.status(400).send('No files were uploaded.');
   }

@@ -22,7 +22,8 @@ export class BookingController{
     
     async create(req, res) {
         if (req.method === 'POST') {
-            let message =  `You have a new booking from Zinder from ${req.body.name}. Full Data below\n${JSON.stringify(req.body)}`;
+            let message =  `You have a new booking from Zinder from ${req.body.name}. 
+                            Full Data below\n${JSON.stringify(req.body)}`;
             let response = await this._ts._messageAdmin(message);
             let newContact = this._create(req, res);
             console.log({response,newContact})
