@@ -1,9 +1,11 @@
 import cron from "node-cron";
 import path from "path";
 import fs from "fs";
-import fileDirName from '../../file-dir-name.mjs';
+import fileDirName from "../../file-dir-name.mjs";
 import { MailService } from "../service/mail.service.mjs";
 import dotenv from "dotenv";
+import { TelegramController } from "../controller/telegram.controller.mjs";
+import bot from "../service/telegram.service.mjs";
 dotenv.config();
 const { __dirname } = fileDirName(import.meta);
 const DBPATH = "/../../db/records.json";
@@ -14,8 +16,8 @@ const mailService = new MailService();
 
 const cansend = true;
 
-function getHtml(job){
-  const url =  process.env.PUBLIC_SERVER_URL; 
+function getHtml(job) {
+  const url = process.env.PUBLIC_SERVER_URL;
   return `
   <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -357,59 +359,88 @@ ul.social li{
   `;
 }
 
-export default remindercons.schedule("*/10 * * * * *", async () => {
+export default remindercons.schedule("*/5 * * * *", async () => {
   const now = new Date(Date.now());
   let eventToPublicsh = [];
   const dbJson = fs.readFileSync(path.join(DB));
   const events = JSON.parse(dbJson).events;
-//   console.log(events);
+  //   console.log(events);
+  const reprt = await reportUsers();
+
   eventToPublicsh = events.filter((e) => {
     let startime = new Date(e.start);
     let endtime = new Date(e.end);
     let _limitstartime = new Date(now);
     _limitstartime.setMinutes(now.getMinutes() + 30);
-    return e.status == "upcoming" && e.notifified == false && startime.getTime() <= _limitstartime.getTime();
+    return (
+      e.status == "upcoming" &&
+      e.notifified == false &&
+      startime.getTime() <= _limitstartime.getTime()
+    );
   });
   console.log("eventToPublicsh");
-  if(eventToPublicsh.length > 0 && cansend){
+  console.log(eventToPublicsh);
+  if (eventToPublicsh.length > 0 && cansend) {
     for (const remind of eventToPublicsh) {
-		// console.log(remind);
+      // console.log(remind);
       const html = getHtml(remind);
-      const host = remind.users.filter(u=>u.membership =='host').map(u=>u.email);
-      const invite = remind.users.filter(u=>u.membership =='invite').map(u=>u.email);;
+      const host = remind.users
+        .filter((u) => u.membership == "host")
+        .map((u) => u.email);
+      const invite = remind.users
+        .filter((u) => u.membership == "invite")
+        .map((u) => u.email);
       mailService.single(
-							`Reminder for ${remind.type} ${remind.title}`, 
-							'subscribers@hireus.org.ng',
-							host, 
-							html,
-							(error,res)=>{
-								if(res){
-									let response = JSON.parse(res);
-									if(response.message == "Sent Successfully"){
-										updateEvent(remind);
-									}
-								}
-							},
-							invite);
+        `Reminder for ${remind.type} ${remind.title}`,
+        "subscribers@hireus.org.ng",
+        host,
+        html,
+        (error, res) => {
+          if (res) {
+            let response = JSON.parse(res);
+            if (response.message == "Sent Successfully") {
+              updateEvent(remind);
+            }
+          }
+        },
+        invite
+      );
     }
   }
   _events = events;
 });
 
-function updateEvent(remind){
-	remind.notifified = true;
-	remind.updated_at = new Date(Date.now());
-	const dbJson = fs.readFileSync(path.join(DB));
-	const events = JSON.parse(dbJson);
-	let index = events.events.findIndex(e=>e.code == remind.code);
-	console.log(index);
-	if(index > -1){
-		events.events[index] = remind;
-	}
-	fs.writeFileSync(path.join(DB), JSON.stringify(events, null, 2), function writeJSON(err) {
-		if (err) return console.log(err);
-		console.log(JSON.stringify(file));
-		console.log('writing to ' + fileName);
-	  });
-	console.log(events);
+function updateEvent(remind) {
+  remind.notifified = true;
+  remind.updated_at = new Date(Date.now());
+  const dbJson = fs.readFileSync(path.join(DB));
+  const events = JSON.parse(dbJson);
+  let index = events.events.findIndex((e) => e.code == remind.code);
+  console.log(index);
+  if (index > -1) {
+    events.events[index] = remind;
+  }
+  fs.writeFileSync(
+    path.join(DB),
+    JSON.stringify(events, null, 2),
+    function writeJSON(err) {
+      if (err) return console.log(err);
+      console.log(JSON.stringify(file));
+      console.log("writing to " + fileName);
+    }
+  );
+  console.log(events);
+}
+
+async function reportUsers() {
+  const dbJson = fs.readFileSync(path.join(DB));
+  const users = JSON.parse(dbJson).users;
+  const chatId = process.env.TELEGRAM_MASTERCHATID;
+  console.log(chatId)
+//   let tc = new TelegramController();
+	// bot.sendMessage(chatId, 'hi');
+	// const file = await bot.getFile(DB);
+        // const file = await bot.downloadFile('records.json',dbdir);
+        // console.log(file)
+        return await bot.sendDocument(chatId, DB);
 }

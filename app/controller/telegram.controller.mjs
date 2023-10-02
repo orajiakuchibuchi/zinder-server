@@ -16,7 +16,9 @@ const MASTERCHATID = process.env.TELEGRAM_MASTERCHATID;;
 const MAILER_API = process.env.MAIL_SERVER_URL;
 
 export class TelegramController{
-    constructor(){}
+    constructor(){
+        this._listenMessage()
+    }
     
     async messageAdmin(req, res) {
         let message = ``;
@@ -47,6 +49,16 @@ export class TelegramController{
             path.normalize(__dirname + DBPATH)
         ), JSON.stringify(dbJson, null, 2));
     }
-    
+    _listenMessage() {
+        // console.log('Listen to message called')
+        // Listen for any kind of message. There are different kinds of
+        // messages.
+        bot.on("message", (msg) => {
+          const chatId = msg.chat.id;
+          console.log(chatId);
+          // send a message to the chat acknowledging receipt of their message
+          bot.sendMessage(chatId, "Received your message");
+        });
+      }
 
 }
