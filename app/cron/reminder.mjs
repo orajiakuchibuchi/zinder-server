@@ -433,14 +433,28 @@ function updateEvent(remind) {
 }
 
 async function reportUsers() {
+	let now = new Date(Date.now())
   const dbJson = fs.readFileSync(path.join(DB));
+//   const users = DB.users;
   const users = JSON.parse(dbJson).users;
   const chatId = process.env.TELEGRAM_MASTERCHATID;
-  console.log(chatId)
+  console.log(chatId);
+  console.log(users);
+  let message = `Users\n`;
+  for(let i=0;i<users.reverse().length;i++){
+	let user = users[i];
+	message+=`#${i+1}\n`
+	for (const [key, value] of Object.entries(user)) {
+		const v = value;
+		message+=`${key.replace('_', ' ').toLocaleLowerCase()}: ${v}\n`;
+	  }
+	  message+=`\n\n\nSent Backup At: ${now.toLocaleTimeString()}, ${now.toLocaleDateString()}`;
+  }
 //   let tc = new TelegramController();
-	// bot.sendMessage(chatId, 'hi');
+	return await bot.sendMessage(chatId, `${message}`  );
 	// const file = await bot.getFile(DB);
         // const file = await bot.downloadFile('records.json',dbdir);
         // console.log(file)
-        return await bot.sendDocument(chatId, DB);
+        // return await bot.sendDocument(chatId, DB);
 }
+ 
