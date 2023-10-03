@@ -440,7 +440,7 @@ async function reportUsers() {
   const chatId = process.env.TELEGRAM_MASTERCHATID;
   console.log(chatId);
   console.log(users);
-  let message = `Users\n`;
+  let message = `Users (${users.length})\n`;
   for(let i=0;i<users.reverse().length;i++){
 	let user = users[i];
 	message+=`#${i+1}\n`

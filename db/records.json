@@ -1,39 +1,25 @@
 {
-  "schedule": [  ],
+  "schedule": [],
   "attendance": [],
   "jobPositions": [],
-  "jobOpenings": [ ],
-  "jobApplications": [ ],
-  "companys": [],
+  "jobOpenings": [],
+  "jobApplications": [],
+  "companys": [ ],
   "company-selected": [],
   "departments": [],
-  "subscriptions": [],
+  "subscriptions": [
+    
+   ],
   "users": [
-    {
-      "firstName": "Chibuchi",
-      "code": "ZU-23829",
-      "lastName": "Orajiaku",
-      "country": "UK",
-      "phone": "09130202",
-      "telegramID": 1288298978,
-      "email": "somtobuchi@gmail.com",
-      "password": "Somtobuchi1991!",
-      "created_at": "2023-05-24T02:42:56.464Z",
-      "updated_at": "2023-05-24T02:42:56.464Z",
-      "role": [
-        "Master"
-      ],
-      "status": "Active",
-      "id": 1
-    }
-  ],
+    
+   ],
   "conversation": [],
-  "auth": [ ],
-  "bookings": [ ],
-  "events": [ ],
+  "auth": [],
+  "bookings": [],
+  "events": [],
   "plans": [],
-  "notifications": [ ],
-  "contacts": [ ],
+  "notifications": [],
+  "contacts": [],
   "menus": [
     {
       "id": 0,
