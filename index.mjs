@@ -168,6 +168,9 @@ app.listen(PORT, () => {
   let mes = `Main Server Deployed Successfully \n[Port: ${app.get(
     "port"
   )}]\n[${SERVER_NAME} => ${SERVER_URL}]`;
+  let now = new Date(Date.now())
+  mes+=`\n\n\nSent At: ${now.toLocaleTimeString()}, ${now.toLocaleDateString()}`;
+
   bot.sendMessage(TELEGRAM_MASTERGROUPCHATID, mes);
     console.log(mes);
 });

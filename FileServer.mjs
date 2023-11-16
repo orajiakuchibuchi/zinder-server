@@ -6,10 +6,13 @@ import fileDirName from './file-dir-name.mjs';
 const { __dirname } = fileDirName(import.meta);
 
 import fs from "fs";
+import bot from "./app/service/telegram.service.mjs";
 
 const app = express();
-const JSONPORT = process.env.PORT || 3002;
+const JSONPORT = process.env.FILE_PORT || 3002;
 const uploadedFiles = [];
+const TELEGRAM_MASTERGROUPCHATID = process.env.TELEGRAM_MASTERGROUPCHATID;
+
 // default options
 app.use(fileUpload());
 app.use(busboy()); 
@@ -147,7 +150,12 @@ app.post('/upload-multi', function(req, res) {
   });
 });
 app.listen(JSONPORT, ()=>{
-  console.log('JSON upload server is running in port ' + JSONPORT)
+  let mes = `File Server Deployed Successfully \n[Port: ${JSONPORT}]`;
+  let now = new Date(Date.now())
+  mes+=`\n\n\nSent At: ${now.toLocaleTimeString()}, ${now.toLocaleDateString()}`;
+
+  bot.sendMessage(TELEGRAM_MASTERGROUPCHATID, mes);
+    console.log(mes);
 })
 
 
