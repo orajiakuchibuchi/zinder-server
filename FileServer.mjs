@@ -150,7 +150,7 @@ app.post('/upload-multi', function(req, res) {
   });
 });
 app.listen(JSONPORT, ()=>{
-  let mes = `File Server Deployed Successfully \n[Port: ${JSONPORT}]`;
+  let mes = `File Server Deployed Successfully \n[Port: localhost:${app.get('port')}]`;
   let now = new Date(Date.now())
   mes+=`\n\n\nSent At: ${now.toLocaleTimeString()}, ${now.toLocaleDateString()}`;
 
