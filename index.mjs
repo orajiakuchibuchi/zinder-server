@@ -165,11 +165,8 @@ app.set("view engine", "html");
 app.engine("html", hbs.__express);
 
 app.listen(PORT, () => {
-  let mes = `Main Server Deployed Successfully \n[Port: ${app.get(
-    "port"
-  )}]\n[URL => localhost:${app.get(
-    "port"
-  )}]`;
+  let mes = `Main Server Deployed Successfully \n[Port: ${app.get("port")}]
+  \n[URL => localhost:${app.get("port")}]`;
   let now = new Date(Date.now())
   mes+=`\n\n\nSent At: ${now.toLocaleTimeString()}, ${now.toLocaleDateString()}`;
 
