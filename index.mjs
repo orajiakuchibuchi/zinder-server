@@ -35,6 +35,8 @@ const bookings = new BookingController();
 const userController = new UserController();
 const attendanceController = new AttendanceController();
 const mailController = new MailController(express);
+const TELEGRAM_MASTERGROUPCHATID = process.env.TELEGRAM_MASTERGROUPCHATID;
+
 // JSON Server Router
 const router = JsonServer.router(DB);
 const app = JsonServer.create();
@@ -163,7 +165,11 @@ app.set("view engine", "html");
 app.engine("html", hbs.__express);
 
 app.listen(PORT, () => {
-  console.info(`${SERVER_NAME} App listening on port ${SERVER_URL}`);
+  let mes = `Main Server Deployed Successfully \n[Port: ${app.get(
+    "port"
+  )}]\n[${SERVER_NAME} => ${SERVER_URL}]`;
+  bot.sendMessage(TELEGRAM_MASTERGROUPCHATID, mes);
+    console.log(mes);
 });
 
 
