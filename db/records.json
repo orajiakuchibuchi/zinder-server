@@ -1,14 +1,178 @@
 {
   "schedule": [],
   "attendance": [],
-  "jobPositions": [],
-  "jobOpenings": [],
+  "jobPositions": [
+    {
+      "who": "ZU-60752",
+      "title": "Graphic designer",
+      "code": "ZJP-6501",
+      "department_id": "Dept1034",
+      "description": "Remote job is here for you to apply",
+      "responsibility": "Remote job is here for you to apply",
+      "created_at": "2023-11-16T15:55:08.998Z",
+      "updated_at": "2023-11-16T15:55:08.998Z",
+      "working_hours": "",
+      "salary": 50000,
+      "commission": "",
+      "pay_type": "salary",
+      "job_type": "Remote",
+      "base_earning": 10000,
+      "max_earning": 100000,
+      "promotable": true,
+      "required_documents": [
+        "CV"
+      ],
+      "optional_documents": [
+        "Cover Letter Upload"
+      ],
+      "company": "ZC-35234262",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
+  "jobOpenings": [
+    {
+      "who": "ZU-60752",
+      "title": "Junior GD needed",
+      "code": "JO-118",
+      "info": "cRemote job is here for you to applyRemote job is here for you to applyRemote job is here for you to applyRemote job is here for you to applyRemote job is here for you to apply",
+      "position": "ZJP-6501",
+      "deadline": "2023-11-30",
+      "created_at": "Thu Nov 16 2023",
+      "updated_at": "Thu Nov 16 2023",
+      "status": "Open",
+      "public_url": "http://localhost:5001/admin/recruitment/job-opening/preview/JO-118",
+      "private_url": "http://localhost:5001/admin/recruitment/job-opening/applications/JO-118",
+      "company": "ZC-35234262",
+      "views": 0,
+      "applications": 0,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "jobApplications": [],
-  "companys": [],
+  "companys": [
+    {
+      "who": "ZU-60752",
+      "name": "Morrhtech Solution",
+      "website": "MorrhtechSolution.com",
+      "logo": "http://localhost:3002/v/4-10-2023/1700149815583-Screenshot (98).png",
+      "country": "Nigeria",
+      "address": "7th Avenue Festac Town",
+      "cerated_at": "2023-11-16T15:50:27.025Z",
+      "updated_at": "2023-11-16T15:50:27.025Z",
+      "status": "Active",
+      "code": "ZC-35234262",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "company-selected": [],
-  "departments": [],
-  "subscriptions": [],
-  "users": [],
+  "departments": [
+    {
+      "who": "ZU-60752",
+      "name": "IT",
+      "code": "Dept1034",
+      "created_at": "2023-11-16T15:53:18.212Z",
+      "updated_at": "2023-11-16T15:53:18.212Z",
+      "hod": null,
+      "status": "Active",
+      "company": "ZC-35234262",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
+  "subscriptions": [
+    {
+      "who": "ZU-60752",
+      "app": {
+        "short_name": "HR Solution",
+        "long_name": "Human Resource Solution App",
+        "status": "Active",
+        "code": "ZA-001",
+        "fee": 50000,
+        "icon": "assets/img/human-resources.png",
+        "created_at": "2023-06-09T22:40:10.840Z",
+        "updated_at": "2023-06-09T22:40:10.840Z",
+        "id": 1
+      },
+      "transaction": {
+        "status": "successful",
+        "customer": {
+          "name": "chibuchi ",
+          "email": "somtobuchi@gmail.com"
+        },
+        "transaction_id": 4728762,
+        "tx_ref": "APPSUB-586864644331189",
+        "flw_ref": "FLW-MOCK-aacb12aebf98ed7ce9c44f3f820afeb9",
+        "currency": "NGN",
+        "amount": 50000,
+        "charged_amount": 50000,
+        "charge_response_code": "00",
+        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
+        "created_at": "2023-11-16T15:51:36.000Z"
+      },
+      "company": "ZC-35234262",
+      "code": "ZinTranz-ZU-60752-ZC-35234262-1700149907639-90293",
+      "created_at": "2024-11-16T15:51:47.639Z",
+      "updated_at": "2024-11-16T15:51:47.639Z",
+      "expires_at": "2024-11-16T15:51:47.639Z",
+      "status": "Active",
+      "type": "App",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "who": "GUEST",
+      "firstName": "chibuchi",
+      "lastName": "orajiaku",
+      "country": "Nigeria",
+      "phone": "08140134343",
+      "email": "somtobuchi@gmail.com",
+      "code": "ZU-60752",
+      "password": "password",
+      "role": [
+        "Admin"
+      ],
+      "created_at": "2023-11-16T15:48:44.823Z",
+      "updated_at": "2023-11-16T15:48:44.823Z",
+      "status": "Active",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "conversation": [],
   "auth": [],
   "bookings": [],
