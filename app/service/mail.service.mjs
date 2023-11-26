@@ -30,7 +30,6 @@ export class MailService{
         }
         request(clientServerOptions, function (error, response) {
             console.log("error,response.body");
-            console.log(error,response.body);
             cb(error,response.body);
         });
         // return await needle.post(`${MAILER_API}/mail`, data)

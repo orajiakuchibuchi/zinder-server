@@ -4,21 +4,85 @@
   "jobPositions": [
     {
       "who": "ZU-60752",
-      "title": "Graphic designer",
-      "code": "ZJP-6501",
+      "title": "JP posi",
+      "code": "ZJP-3444",
       "department_id": "Dept1034",
-      "description": "Remote job is here for you to apply",
-      "responsibility": "Remote job is here for you to apply",
-      "created_at": "2023-11-16T15:55:08.998Z",
-      "updated_at": "2023-11-16T15:55:08.998Z",
+      "description": "sddddddddddddddddddddddddddd",
+      "responsibility": "sdfd;mdssssssssssssssssssssssssssssssssssssssssssssssssss",
+      "created_at": "2023-11-26T02:14:58.155Z",
+      "updated_at": "2023-11-26T02:14:58.155Z",
       "working_hours": "",
       "salary": 50000,
       "commission": "",
       "pay_type": "salary",
-      "job_type": "Remote",
+      "job_type": "On-Site",
       "base_earning": 10000,
-      "max_earning": 100000,
+      "max_earning": 1000000,
       "promotable": true,
+      "required_documents": [
+        "Resume"
+      ],
+      "optional_documents": [
+        "Cover Letter Upload"
+      ],
+      "company": "ZC-35234262",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    },
+    {
+      "who": "ZU-60752",
+      "title": "jssjjssjj",
+      "code": "ZJP-8599",
+      "department_id": "Dept1034",
+      "description": "sssssssssssssssssssssssssssssss",
+      "responsibility": "fddddddddddddddddddddddddddddddddddddddddddddddd",
+      "created_at": "2023-11-26T02:23:47.758Z",
+      "updated_at": "2023-11-26T02:23:47.758Z",
+      "working_hours": 6,
+      "salary": 60,
+      "commission": "",
+      "pay_type": "hourly",
+      "job_type": "Remote",
+      "base_earning": 10,
+      "max_earning": 100,
+      "promotable": true,
+      "required_documents": [
+        "Cover Letter Upload"
+      ],
+      "optional_documents": [
+        "CV"
+      ],
+      "company": "ZC-35234262",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 2
+    },
+    {
+      "who": "ZU-60752",
+      "title": "sdkfbsdfsbfsfbsdbf",
+      "code": "ZJP-1791",
+      "department_id": "Dept1034",
+      "description": "sdffadflsdfjfdfisdjfjweifwejjjjjjjjj",
+      "responsibility": "fsddddddddddddddddddddddnkllllllllllllllllllllllll",
+      "created_at": "2023-11-26T02:27:29.531Z",
+      "updated_at": "2023-11-26T02:27:29.531Z",
+      "working_hours": "",
+      "salary": "",
+      "commission": 5,
+      "pay_type": "commission",
+      "job_type": "Hybrid",
+      "base_earning": 1,
+      "max_earning": 100,
+      "promotable": false,
       "required_documents": [
         "CV"
       ],
@@ -32,7 +96,39 @@
       "osVersion": "windows-10",
       "browser": "Chrome",
       "deviceOrientation": "landscape",
-      "id": 1
+      "id": 3
+    },
+    {
+      "who": "ZU-60752",
+      "title": "fsdfssfsd",
+      "code": "ZJP-2380",
+      "department_id": "Dept1034",
+      "description": "sdfsdddddddddddddddddddddddddddddd",
+      "responsibility": "sd;fklllllllllllllllllllllllllllllllllllllllllllllllllllllllllll",
+      "created_at": "2023-11-26T02:33:28.619Z",
+      "updated_at": "2023-11-26T02:33:28.619Z",
+      "working_hours": 10,
+      "salary": "",
+      "commission": "",
+      "pay_type": "hourly",
+      "job_type": "Remote",
+      "base_earning": 10,
+      "max_earning": 100,
+      "promotable": false,
+      "required_documents": [
+        "Cover Letter Upload"
+      ],
+      "optional_documents": [
+        "Additional Document"
+      ],
+      "company": "ZC-35234262",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 4
     }
   ],
   "jobOpenings": [
@@ -80,6 +176,25 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 1
+    },
+    {
+      "who": "ZU-56118",
+      "name": "MorrhtechSolution",
+      "website": "MorrhtechSolution.com",
+      "logo": "http://localhost:3002/v/3-10-2023/1700608746813-Screenshot (18).png",
+      "country": "Nigeria",
+      "address": "G close, Festac Town, Lagos",
+      "cerated_at": "2023-11-21T23:19:11.300Z",
+      "updated_at": "2023-11-21T23:19:11.300Z",
+      "status": "Active",
+      "code": "ZC-61649625",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 2
     }
   ],
   "company-selected": [],
@@ -171,6 +286,29 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 1
+    },
+    {
+      "who": "GUEST",
+      "firstName": "ubioka",
+      "lastName": "joel",
+      "country": "nigeria",
+      "phone": "07033111481",
+      "email": "joelubioka@gmail.com",
+      "code": "ZU-56118",
+      "password": "123456",
+      "role": [
+        "Admin"
+      ],
+      "created_at": "2023-11-21T22:58:21.689Z",
+      "updated_at": "2023-11-21T22:58:21.689Z",
+      "status": "Active",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 2
     }
   ],
   "conversation": [
@@ -269,11 +407,66 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 4
+    },
+    {
+      "who": "ZU-60752",
+      "content": "hi",
+      "status": "Sent",
+      "code": "ZU-60752_messagebox_null-at-633",
+      "file": null,
+      "sender": "ZU-60752",
+      "recipient": "ZU-60752",
+      "dir": null,
+      "message": null,
+      "fileName": null,
+      "serverLocation": null,
+      "uploadPath": null,
+      "created_at": "2023-11-25T13:12:39.633Z",
+      "updated_at": "2023-11-25T13:12:39.633Z",
+      "mail": null,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 5
     }
   ],
   "auth": [],
   "bookings": [],
-  "events": [],
+  "events": [
+    {
+      "who": "ZU-60752",
+      "type": "Leave",
+      "start": "2023-11-24T12:51",
+      "end": "2023-12-01T12:51",
+      "title": "klnnnnnn",
+      "message": "nmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+      "company": "ZC-35234262",
+      "creator": "ZU-60752",
+      "code": "Z-Leave1700740275860",
+      "notifified": true,
+      "status": "upcoming",
+      "created_at": "2023-11-23T11:51:15.860Z",
+      "updated_at": "2023-11-26T05:05:04.108Z",
+      "reoccuring": false,
+      "users": [
+        {
+          "email": "somtobuchi@gmail.com",
+          "code": "ZU-60752",
+          "membership": "host"
+        }
+      ],
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "plans": [],
   "notifications": [],
   "contacts": [],
