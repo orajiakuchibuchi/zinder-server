@@ -4,102 +4,6 @@
   "jobPositions": [
     {
       "who": "ZU-60752",
-      "title": "JP posi",
-      "code": "ZJP-3444",
-      "department_id": "Dept1034",
-      "description": "sddddddddddddddddddddddddddd",
-      "responsibility": "sdfd;mdssssssssssssssssssssssssssssssssssssssssssssssssss",
-      "created_at": "2023-11-26T02:14:58.155Z",
-      "updated_at": "2023-11-26T02:14:58.155Z",
-      "working_hours": "",
-      "salary": 50000,
-      "commission": "",
-      "pay_type": "salary",
-      "job_type": "On-Site",
-      "base_earning": 10000,
-      "max_earning": 1000000,
-      "promotable": true,
-      "required_documents": [
-        "Resume"
-      ],
-      "optional_documents": [
-        "Cover Letter Upload"
-      ],
-      "company": "ZC-35234262",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "browserVersion": "119.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 1
-    },
-    {
-      "who": "ZU-60752",
-      "title": "jssjjssjj",
-      "code": "ZJP-8599",
-      "department_id": "Dept1034",
-      "description": "sssssssssssssssssssssssssssssss",
-      "responsibility": "fddddddddddddddddddddddddddddddddddddddddddddddd",
-      "created_at": "2023-11-26T02:23:47.758Z",
-      "updated_at": "2023-11-26T02:23:47.758Z",
-      "working_hours": 6,
-      "salary": 60,
-      "commission": "",
-      "pay_type": "hourly",
-      "job_type": "Remote",
-      "base_earning": 10,
-      "max_earning": 100,
-      "promotable": true,
-      "required_documents": [
-        "Cover Letter Upload"
-      ],
-      "optional_documents": [
-        "CV"
-      ],
-      "company": "ZC-35234262",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "browserVersion": "119.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 2
-    },
-    {
-      "who": "ZU-60752",
-      "title": "sdkfbsdfsbfsfbsdbf",
-      "code": "ZJP-1791",
-      "department_id": "Dept1034",
-      "description": "sdffadflsdfjfdfisdjfjweifwejjjjjjjjj",
-      "responsibility": "fsddddddddddddddddddddddnkllllllllllllllllllllllll",
-      "created_at": "2023-11-26T02:27:29.531Z",
-      "updated_at": "2023-11-26T02:27:29.531Z",
-      "working_hours": "",
-      "salary": "",
-      "commission": 5,
-      "pay_type": "commission",
-      "job_type": "Hybrid",
-      "base_earning": 1,
-      "max_earning": 100,
-      "promotable": false,
-      "required_documents": [
-        "CV"
-      ],
-      "optional_documents": [
-        "Cover Letter Upload"
-      ],
-      "company": "ZC-35234262",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "browserVersion": "119.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 3
-    },
-    {
-      "who": "ZU-60752",
       "title": "fsdfssfsd",
       "code": "ZJP-2380",
       "department_id": "Dept1034",
@@ -129,6 +33,38 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 4
+    },
+    {
+      "who": "ZU-60752",
+      "title": "junior dev intern",
+      "code": "ZJP-7096",
+      "department_id": "Dept1034",
+      "description": "jnr dev position available on the platforma",
+      "responsibility": "jnr dev position available on the platformajnr dev position available on the platformajnr dev position available on the platformajnr dev position available on the platforma",
+      "created_at": "2023-11-27T19:53:48.178Z",
+      "updated_at": "2023-11-27T19:53:48.178Z",
+      "working_hours": 5,
+      "salary": "",
+      "commission": "",
+      "pay_type": "hourly",
+      "job_type": "Hybrid",
+      "base_earning": 10,
+      "max_earning": 100,
+      "promotable": true,
+      "required_documents": [
+        "CV"
+      ],
+      "optional_documents": [
+        "Cover Letter Upload"
+      ],
+      "company": "ZC-35234262",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 5
     }
   ],
   "jobOpenings": [
@@ -142,10 +78,10 @@
       "created_at": "Thu Nov 16 2023",
       "updated_at": "Thu Nov 16 2023",
       "status": "Open",
-      "public_url": "http://localhost:5001/admin/recruitment/job-opening/preview/JO-118",
-      "private_url": "http://localhost:5001/admin/recruitment/job-opening/applications/JO-118",
+      "public_url": "http://localhost:5000/jobs/JO-118",
+      "private_url": "http://localhost:5000/admin/recruitment/job-opening/applications/JO-118",
       "company": "ZC-35234262",
-      "views": 0,
+      "views": 2,
       "applications": 0,
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
       "browserVersion": "119.0.0.0",
@@ -154,9 +90,99 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 1
+    },
+    {
+      "who": "ZU-60752",
+      "title": "junior dev intern",
+      "code": "JO-200",
+      "info": "<div>Position: Junior Software Development Intern</div><div><br></div><div>Overview:</div><div>Join our dynamic team as a Junior Software Development Intern to gain hands-on experience in a fast-paced and innovative environment. This internship is designed for individuals with a passion for software development, offering exposure to real-world projects and mentorship opportunities. If you're eager to learn, collaborate, and contribute to cutting-edge solutions, this is the perfect opportunity to kickstart your career in software development.</div><div><br></div><div>Responsibilities:</div><div><br></div><div>Collaborate with the development team on various software projects.</div><div>Assist in coding, testing, and debugging applications.</div><div>Learn and apply best practices in software development.</div><div>Participate in team meetings and contribute ideas and solutions.</div><div>Engage in code reviews and provide constructive feedback.</div><div>Qualifications:</div><div><br></div><div>Pursuing a degree in Computer Science, Software Engineering, or related field.</div><div>Basic understanding of programming languages (e.g., Java, Python, JavaScript).</div><div>Familiarity with web development concepts and tools.</div><div>Eagerness to learn and adapt to new technologies.</div><div>Strong problem-solving and analytical skills.</div><div>Excellent communication and teamwork abilities.</div><div>Benefits:</div><div><br></div><div>Mentorship from experienced software developers.</div><div>Exposure to industry-standard tools and methodologies.</div><div>Real-world project experience to enhance your portfolio.</div><div>Networking opportunities within the tech industry.</div><div>Potential for future employment based on performance.</div><div>Duration:</div><div>This is a [X]-month internship program, providing a comprehensive learning experience in software development.</div><div><br></div><div>Location:</div><div>[Specify location or remote]</div><div><br></div><div>How to Apply:</div><div>Via Zinder Jobs</div><div><br></div><div>Join us and embark on a rewarding journey to kickstart your career in software development!</div>",
+      "position": "ZJP-7096",
+      "deadline": "2023-12-08",
+      "created_at": "Wed Nov 29 2023",
+      "updated_at": "Wed Nov 29 2023",
+      "status": "Open",
+      "public_url": "http://localhost:5000/jobs/JO-200",
+      "private_url": "http://localhost:5000/admin/recruitment/job-opening/applications/JO-200",
+      "company": "ZC-35234262",
+      "views": 1,
+      "applications": 0,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 2
     }
   ],
-  "jobApplications": [],
+  "jobApplications": [
+    {
+      "firstName": "rally",
+      "lastName": "nans",
+      "country": "Nigeria",
+      "phone": "4433677629",
+      "email": "chibuchisomto1@gmail.com",
+      "requiredUploads": {
+        "cv": {
+          "message": "File uploaded!",
+          "serverLocation": "C:\\Users\\HP\\Documents\\seanproject\\dummy-server/public/v/4-11-2023/cv/1701237329029-ZinderHR.pdf",
+          "dir": "/v/4-11-2023",
+          "uploadPath": "/v/4-11-2023/cv/1701237329029-ZinderHR.pdf",
+          "fileName": "1701237329029-ZinderHR.pdf",
+          "file": "http://localhost:3002/v/4-11-2023/cv/1701237329029-ZinderHR.pdf",
+          "errors": [],
+          "created_at": "2023-11-29T05:55:29.028Z",
+          "updated_at": "2023-11-29T05:55:29.028Z"
+        }
+      },
+      "optionalUploads": {
+        "cover_letter upload": "http://localhost:3002/v/4-11-2023/cover_letter upload/1701237328988-ZinderHR.pdf"
+      },
+      "coverLetterTypeContent": "<div>[Your Name]</div><div>[Your Address]</div><div>[City, State, ZIP Code]</div><div>[Your Email Address]</div><div>[Your Phone Number]</div><div>[Date]</div><div><br></div><div>[Employer's Name]</div><div>[Company Name]</div><div>[Company Address]</div><div>[City, State, ZIP Code]</div><div><br></div><div>Dear [Employer's Name],</div><div><br></div><div>I am writing to express my enthusiasm for the Junior Developer Intern position at [Company Name], as advertised. As a [Your University] student in Nigeria pursuing a degree in Computer Science, I am eager to apply my academic knowledge in a practical setting, and I believe [Company Name] provides the perfect environment for me to do so.</div><div><br></div><div>Educational Background:</div><div>I am currently enrolled in [Your University] and have successfully completed coursework in programming languages such as Java and Python. My academic journey has equipped me with a solid foundation in software development principles, and I am excited to translate this knowledge into real-world projects.</div><div><br></div><div>Relevant Skills:</div><div>During my studies, I have developed a keen understanding of coding best practices, problem-solving, and collaborative teamwork. My hands-on experience with projects, including [mention any relevant project], has honed my ability to analyze and troubleshoot software issues effectively.</div><div><br></div><div>Passion for Learning:</div><div>What excites me most about [Company Name] is the emphasis on continuous learning and innovation. I am eager to be part of a team that encourages the exploration of emerging technologies, and I am confident that my passion for learning aligns well with [Company Name]'s commitment to excellence.</div><div><br></div><div>Why [Company Name]:</div><div>I am drawn to [Company Name] not only for its reputation as an industry leader but also for the inclusive and collaborative culture that fosters professional growth. I am particularly impressed by [mention any specific project, technology, or initiative] and am eager to contribute my skills and learn from experienced professionals.</div><div><br></div><div>Conclusion:</div><div>I am excited about the opportunity to contribute to [Company Name] as a Junior Developer Intern and am confident that my academic background, coupled with my dedication to learning and problem-solving, make me a valuable candidate.</div><div><br></div><div>Thank you for considering my application. I look forward to the possibility of discussing how my skills and enthusiasm align with [Company Name]'s goals in further detail.</div><div><br></div><div>Sincerely,</div><div><br></div><div>[Your Name]</div>",
+      "referredBy": "Zinder Ads",
+      "code": "JA-204",
+      "created_at": "Wed Nov 29 2023",
+      "updated_at": "Wed Nov 29 2023",
+      "status": "submitted",
+      "public_url": "http://localhost:5000/admin/recruitment/job-opening/applications/preview/JA-204",
+      "company": "ZC-35234262",
+      "private_url": "http://localhost:5000/admin/recruitment/job-opening/applications/JA-204",
+      "opening_code": "JO-200",
+      "messages": [],
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1,
+      "uploaded_at": "2023-11-29T05:55:30.026Z",
+      "uploads": [
+        {
+          "message": "File uploaded!",
+          "serverLocation": "C:\\Users\\HP\\Documents\\seanproject\\dummy-server/public/v/4-11-2023/cv/1701237329029-ZinderHR.pdf",
+          "dir": "/v/4-11-2023",
+          "uploadPath": "/v/4-11-2023/cv/1701237329029-ZinderHR.pdf",
+          "fileName": "1701237329029-ZinderHR.pdf",
+          "file": "http://localhost:3002/v/4-11-2023/cv/1701237329029-ZinderHR.pdf",
+          "errors": [],
+          "created_at": "2023-11-29T05:55:29.028Z",
+          "updated_at": "2023-11-29T05:55:29.028Z"
+        },
+        {
+          "message": "File uploaded!",
+          "serverLocation": "C:\\Users\\HP\\Documents\\seanproject\\dummy-server/public/v/4-11-2023/cover_letter upload/1701237328988-ZinderHR.pdf",
+          "dir": "/v/4-11-2023",
+          "uploadPath": "/v/4-11-2023/cover_letter upload/1701237328988-ZinderHR.pdf",
+          "fileName": "1701237328988-ZinderHR.pdf",
+          "file": "http://localhost:3002/v/4-11-2023/cover_letter upload/1701237328988-ZinderHR.pdf",
+          "errors": [],
+          "created_at": "2023-11-29T05:55:28.982Z",
+          "updated_at": "2023-11-29T05:55:28.982Z"
+        }
+      ]
+    }
+  ],
   "companys": [
     {
       "who": "ZU-60752",
@@ -592,11 +618,11 @@
       "app_code": "ZA-001"
     },
     {
-      "id": 6,
-      "name": "Attendance & Schedule",
-      "icon": "micon bi bi-calendar2-week-fill",
+      "id": 1802,
+      "name": "Performance",
+      "icon": "micon bi bi-diagram-3-fill",
       "children": [],
-      "link": "admin/calendar",
+      "link": "admin/employee/department",
       "roles": "everyone",
       "app_code": "ZA-001"
     },
@@ -647,11 +673,11 @@
       "app_code": "ZA-001"
     },
     {
-      "id": 1802,
-      "name": "Performance",
-      "icon": "micon bi bi-diagram-3-fill",
+      "id": 6,
+      "name": "Attendance & Schedule",
+      "icon": "micon bi bi-calendar2-week-fill",
       "children": [],
-      "link": "admin/employee/department",
+      "link": "admin/calendar",
       "roles": "everyone",
       "app_code": "ZA-001"
     },
