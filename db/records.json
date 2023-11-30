@@ -185,16 +185,16 @@
   ],
   "companys": [
     {
-      "who": "ZU-60752",
-      "name": "Morrhtech Solution",
-      "website": "MorrhtechSolution.com",
-      "logo": "http://localhost:3002/v/4-10-2023/1700149815583-Screenshot (98).png",
+      "who": "ZU-6ab76344",
+      "name": "MSCCom",
+      "website": "MSCCom.com",
+      "logo": "http://localhost:3002/v/4-10-2023/1701348907858-Screenshot (108).png",
       "country": "Nigeria",
-      "address": "7th Avenue Festac Town",
-      "cerated_at": "2023-11-16T15:50:27.025Z",
-      "updated_at": "2023-11-16T15:50:27.025Z",
+      "address": "G close, Festac Town, Lagos",
+      "cerated_at": "2023-11-30T12:55:13.230Z",
+      "updated_at": "2023-11-30T12:55:13.230Z",
       "status": "Active",
-      "code": "ZC-35234262",
+      "code": "ZC-cbd2c4c4",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
       "browserVersion": "119.0.0.0",
       "os": "Windows",
@@ -202,25 +202,20 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 1
-    },
+    }
+  ],
+  "company-user": [
     {
-      "who": "ZU-56118",
-      "name": "MorrhtechSolution",
-      "website": "MorrhtechSolution.com",
-      "logo": "http://localhost:3002/v/3-10-2023/1700608746813-Screenshot (18).png",
-      "country": "Nigeria",
-      "address": "G close, Festac Town, Lagos",
-      "cerated_at": "2023-11-21T23:19:11.300Z",
-      "updated_at": "2023-11-21T23:19:11.300Z",
-      "status": "Active",
-      "code": "ZC-61649625",
+      "who": "ZU-6ab76344",
+      "company": "ZC-cbd2c4c4",
+      "user": "ZU-6ab76344",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
       "browserVersion": "119.0.0.0",
       "os": "Windows",
       "osVersion": "windows-10",
       "browser": "Chrome",
       "deviceOrientation": "landscape",
-      "id": 2
+      "id": 1
     }
   ],
   "company-selected": [],
@@ -243,67 +238,22 @@
       "id": 1
     }
   ],
-  "subscriptions": [
-    {
-      "who": "ZU-60752",
-      "app": {
-        "short_name": "HR Solution",
-        "long_name": "Human Resource Solution App",
-        "status": "Active",
-        "code": "ZA-001",
-        "fee": 50000,
-        "icon": "assets/img/human-resources.png",
-        "created_at": "2023-06-09T22:40:10.840Z",
-        "updated_at": "2023-06-09T22:40:10.840Z",
-        "id": 1
-      },
-      "transaction": {
-        "status": "successful",
-        "customer": {
-          "name": "chibuchi ",
-          "email": "somtobuchi@gmail.com"
-        },
-        "transaction_id": 4728762,
-        "tx_ref": "APPSUB-586864644331189",
-        "flw_ref": "FLW-MOCK-aacb12aebf98ed7ce9c44f3f820afeb9",
-        "currency": "NGN",
-        "amount": 50000,
-        "charged_amount": 50000,
-        "charge_response_code": "00",
-        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
-        "created_at": "2023-11-16T15:51:36.000Z"
-      },
-      "company": "ZC-35234262",
-      "code": "ZinTranz-ZU-60752-ZC-35234262-1700149907639-90293",
-      "created_at": "2024-11-16T15:51:47.639Z",
-      "updated_at": "2024-11-16T15:51:47.639Z",
-      "expires_at": "2024-11-16T15:51:47.639Z",
-      "status": "Active",
-      "type": "App",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "browserVersion": "119.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 1
-    }
-  ],
+  "subscriptions": [],
   "users": [
     {
       "who": "GUEST",
       "firstName": "chibuchi",
-      "lastName": "orajiaku",
+      "lastName": "ORAJIAKU",
       "country": "Nigeria",
-      "phone": "08140134343",
+      "phone": "234004034030",
       "email": "somtobuchi@gmail.com",
-      "code": "ZU-60752",
+      "code": "ZU-6ab76344",
       "password": "password",
       "role": [
         "Admin"
       ],
-      "created_at": "2023-11-16T15:48:44.823Z",
-      "updated_at": "2023-11-16T15:48:44.823Z",
+      "created_at": "2023-11-29T23:30:53.391Z",
+      "updated_at": "2023-11-29T23:30:53.391Z",
       "status": "Active",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
       "browserVersion": "119.0.0.0",
@@ -312,29 +262,6 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 1
-    },
-    {
-      "who": "GUEST",
-      "firstName": "ubioka",
-      "lastName": "joel",
-      "country": "nigeria",
-      "phone": "07033111481",
-      "email": "joelubioka@gmail.com",
-      "code": "ZU-56118",
-      "password": "123456",
-      "role": [
-        "Admin"
-      ],
-      "created_at": "2023-11-21T22:58:21.689Z",
-      "updated_at": "2023-11-21T22:58:21.689Z",
-      "status": "Active",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "browserVersion": "119.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 2
     }
   ],
   "conversation": [
