@@ -238,7 +238,53 @@
       "id": 1
     }
   ],
-  "subscriptions": [],
+  "subscriptions": [
+    {
+      "who": "ZU-6ab76344",
+      "app": {
+        "short_name": "HR Solution",
+        "long_name": "Human Resource Solution App",
+        "status": "Active",
+        "code": "ZA-001",
+        "fee": 50000,
+        "icon": "assets/img/human-resources.png",
+        "created_at": "2023-06-09T22:40:10.840Z",
+        "updated_at": "2023-06-09T22:40:10.840Z",
+        "id": 1
+      },
+      "transaction": {
+        "status": "successful",
+        "customer": {
+          "name": "chibuchi ",
+          "email": "somtobuchi@gmail.com"
+        },
+        "transaction_id": 4754688,
+        "tx_ref": "APPSUB-923392001442351",
+        "flw_ref": "FLW-MOCK-37ffe823cbb445d77d86c04fb8b93ce0",
+        "currency": "NGN",
+        "amount": 50000,
+        "charged_amount": 50000,
+        "charge_response_code": "00",
+        "charge_response_message": "Please enter the OTP sent to your mobile number 080****** and email te**@rave**.com",
+        "created_at": "2023-11-30T16:30:59.000Z"
+      },
+      "company": "ZC-cbd2c4c4",
+      "code": "ZinTranz-ZU-6ab76344-ZC-cbd2c4c4-1701361869588-18472",
+      "created_at": "2024-11-30T16:31:09.588Z",
+      "updated_at": "2024-11-30T16:31:09.588Z",
+      "expires_at": "2024-11-30T16:31:09.588Z",
+      "status": "Active",
+      "type": "App",
+      "user": "ZU-6ab76344",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "users": [
     {
       "who": "GUEST",
