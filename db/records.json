@@ -1,4 +1,46 @@
 {
+  "wallet": [
+    {
+      "typeOfWallet": "Cryptocurrency",
+      "acc_name": "",
+      "id": 1,
+      "acc_num": "",
+      "bank": "",
+      "balance": "0",
+      "currencyOfWallet": "",
+      "wallet_name": "",
+      "currency_type": "",
+      "network": "",
+      "address": "",
+      "code": "ZW-d32fe",
+      "status": "Active",
+      "who": "ZU-6ab76344"
+    },
+    {
+      "who": "ZU-6ab76344",
+      "typeOfWallet": "Crytocurrency",
+      "acc_name": "",
+      "acc_num": "",
+      "status": "Active",
+      "bank": "",
+      "balance": "0",
+      "currencyOfWallet": "",
+      "wallet_name": "BTC Wallet A",
+      "currency_type": "BTC",
+      "network": "BTC Network",
+      "address": "B1dsd920sdsdjfn23oqwnxm3lfdfdsff",
+      "created_at": 1701900521982,
+      "updated_at": 1701900521982,
+      "code": "ZW-a090dc89",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "browserVersion": "119.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 2
+    }
+  ],
   "schedule": [],
   "attendance": [],
   "jobPositions": [
@@ -687,7 +729,7 @@
       "link": "accounting/withdraw",
       "roles": "everyone",
       "app_code": "ZA-002"
-    }, 
+    },
     {
       "id": 215,
       "name": "Swap",
@@ -696,7 +738,7 @@
       "link": "accounting/withdraw",
       "roles": "everyone",
       "app_code": "ZA-002"
-    }, 
+    },
     {
       "id": 208,
       "name": "Transactions",
