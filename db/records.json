@@ -2,44 +2,13 @@
   "wallet": [ ],
   "schedule": [],
   "attendance": [],
-  "jobPositions": [ ],
+  "jobPositions": [],
   "jobOpenings": [],
   "jobApplications": [ ],
   "companys": [  ],
-  "company-user": [
-    {
-      "who": "ZU-6ab76344",
-      "company": "ZC-cbd2c4c4",
-      "user": "ZU-6ab76344",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "browserVersion": "119.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 1
-    }
-  ],
+  "company-user": [],
   "company-selected": [],
-  "departments": [
-    {
-      "who": "ZU-60752",
-      "name": "IT",
-      "code": "Dept1034",
-      "created_at": "2023-11-16T15:53:18.212Z",
-      "updated_at": "2023-11-16T15:53:18.212Z",
-      "hod": null,
-      "status": "Active",
-      "company": "ZC-35234262",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "browserVersion": "119.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 1
-    }
-  ],
+  "departments": [],
   "subscriptions": [ ],
   "users": [],
   "conversation": [],
