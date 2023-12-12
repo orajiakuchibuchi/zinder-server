@@ -209,6 +209,9 @@
       "id": 1
     }
   ],
+  "transaction": [
+    
+  ],
   "conversation": [],
   "auth": [],
   "bookings": [],
@@ -477,10 +480,19 @@
     },
     {
       "id": 7,
-      "name": "Leave & Holidays",
-      "icon": "micon bi bi-diagram-3",
+      "name": "Holidays",
+      "icon": "micon bi bi-asterisk",
       "children": [],
-      "link": "admin/leave-and-holiday",
+      "link": "admin/holiday",
+      "roles": "everyone",
+      "app_code": "ZA-001"
+    },
+    {
+      "id": 71,
+      "name": "Leave",
+      "icon": "micon bi bi-door-open",
+      "children": [],
+      "link": "admin/leave",
       "roles": "everyone",
       "app_code": "ZA-001"
     },
@@ -571,7 +583,7 @@
       "name": "Swap",
       "icon": "micon bi bi-send",
       "children": [],
-      "link": "accounting/withdraw",
+      "link": "accounting/swap/estimate",
       "roles": "everyone",
       "app_code": "ZA-002"
     },
