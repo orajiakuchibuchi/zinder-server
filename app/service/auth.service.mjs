@@ -29,4 +29,7 @@ export class AuthService{
         ), JSON.stringify({...dbJson}, null, 2));
         return data;
     }
+    updateAdmin(id, data){
+        
+    }
 }
