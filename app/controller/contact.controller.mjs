@@ -23,7 +23,7 @@ export class ContactController{
         const contacts = dbJson.contacts;
         if (req.method === 'POST') {
             if(!req.body.who){
-                a
+                // a
             }
             if(!req.body.recipient){
                 return res.status(500).json({

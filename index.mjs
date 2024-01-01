@@ -20,7 +20,6 @@ import { AttendanceController } from "./app/controller/attendance.controller.mjs
 import { MailController } from "./app/controller/mail.controller.mjs";
 import { AuthController } from "./app/controller/auth.controller.mjs";
 
-
 dotenv.config();
 
 const DBPATH= '/db/records.json';
@@ -111,6 +110,12 @@ app.use(middlewares);
 //   res.jsonp(user);
 // })
 
+// ====== CUSTOM API STARTS ====== (POST, GET, PATCH/UPDATE, DELETE)
+app.post('/register-admin', (req, res)=>authController.register(req, res))
+app.get('/get-admins', (req, res)=>authController.getAdmins(req, res))
+app.patch('/update-admin', (req, res)=>authController.updateAdmin(req, res))
+app.delete('/delete-admin', (req, res)=>authController.deleteAdmin(req, res))
+
 app.get('/my-events/who_like=:who_like', (req, res) => {
   const dbJson = fs.readFileSync(path.join(DB));
 	const events = JSON.parse(dbJson).events;
@@ -153,6 +158,7 @@ app.get('/my-conversations/who_like=:who_like', (req, res) => {
   res.jsonp(myrelated);
 })
 
+// ====== CUSTOM API ENDS ======
 
 
 
@@ -186,3 +192,4 @@ function validateEmail(email){
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
+
