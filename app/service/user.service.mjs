@@ -14,6 +14,12 @@ export class UserService{
         const found = users.find(u=>u.email.toLowerCase() == email.toLowerCase());
         return found ? true : false;
     }
+    doesIdExist(id){
+        const dbJson = JSON.parse(DB);
+        const users = dbJson.users;
+        const found = users.find(u=>u.id == id);
+        return found ? true : false;
+    }
     getByRole(role){
         const dbJson = JSON.parse(DB);
         const users = dbJson.users;
