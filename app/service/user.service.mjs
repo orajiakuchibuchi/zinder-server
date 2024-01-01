@@ -26,6 +26,12 @@ export class UserService{
         const found = users.find(u=>u.code.toLowerCase() == code.toLowerCase());
         return found
     }
+    getByID(id){
+        const dbJson = JSON.parse(DB);
+        const users = dbJson.users;
+        const found = users.find(u=>u.id == id);
+        return found
+    }
     getByEmail(email){
         const dbJson = JSON.parse(DB);
         const users = dbJson.users;

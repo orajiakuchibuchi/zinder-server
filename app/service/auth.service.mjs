@@ -30,6 +30,8 @@ export class AuthService{
         return data;
     }
     updateAdmin(id, data){
+        const dbJson = JSON.parse(DB);
+        const users = [...dbJson.users];
         return data;
     }
 }
