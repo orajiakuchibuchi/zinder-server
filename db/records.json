@@ -392,46 +392,6 @@
     }
   ],
   "users": [
-    {
-      "who": "GUEST",
-      "firstName": "Chibuchi",
-      "lastName": "Orajiaku",
-      "country": "Nigeria",
-      "phone": "08140131453",
-      "email": "somtobuchi@gmail.com",
-      "code": "ZU-6ab76344",
-      "password": "password",
-      "role": [
-        "Admin"
-      ],
-      "created_at": "2023-12-07T12:07:04.247Z",
-      "updated_at": "2023-12-07T12:07:04.247Z",
-      "status": "Active",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "browserVersion": "119.0.0.0",
-      "os": "Windows",
-      "osVersion": "windows-10",
-      "browser": "Chrome",
-      "deviceOrientation": "landscape",
-      "id": 1
-    },
-    {
-      "email": "buchi@gmail.com",
-      "code": "sdsddsd",
-      "firstName": "dsdsds",
-      "lastName": "dsdsds",
-      "phone": "9999997777777",
-      "country": "dsdsd",
-      "role": [
-        "Admin"
-      ],
-      "who": "dsdsds",
-      "password": "password1",
-      "id": 2,
-      "created_at": "2023-12-31T16:02:10.769Z",
-      "updated_at": "2023-12-31T16:02:10.769Z",
-      "status": "Active"
-    }
   ],
   "transaction": [],
   "beneficiaries": [
@@ -498,6 +458,22 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 4
+    },
+    {
+      "who": "ZU-6ab76344",
+      "name": "fdsfsdfsd",
+      "wallet_id": "23442343",
+      "created_at": "1704112903274",
+      "updated_at": "1704112903274",
+      "status": "Active",
+      "code": "dca62854",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 5
     }
   ],
   "conversation": [],
