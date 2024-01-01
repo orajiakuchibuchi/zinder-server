@@ -18,6 +18,8 @@ import { BookingController } from "./app/controller/booking.controller.mjs";
 import { UserController } from "./app/controller/user.controller.mjs";
 import { AttendanceController } from "./app/controller/attendance.controller.mjs";
 import { MailController } from "./app/controller/mail.controller.mjs";
+import { AuthController } from "./app/controller/auth.controller.mjs";
+
 
 dotenv.config();
 
@@ -34,6 +36,7 @@ const telegram = new TelegramController();
 const bookings = new BookingController();
 const userController = new UserController();
 const attendanceController = new AttendanceController();
+const authController = new AuthController();
 const mailController = new MailController(express);
 const TELEGRAM_MASTERGROUPCHATID = process.env.TELEGRAM_MASTERGROUPCHATID;
 
@@ -132,6 +135,7 @@ app.get('/my-events/who_like=:who_like', (req, res) => {
   
   res.jsonp(myrelated);
 })
+app.post('/register-admin', (req, res) => authController.register(req, res))
 
 app.post('/employees', (req, res) => userController.getEmployees(req, res))
 app.get('/contacts/who_like=:who_like', (req, res) => contact.myContacts(req, res))
