@@ -56,7 +56,12 @@ export class AuthController {
     }
     // handler for public PATCH admin request
     updateAdmin(req, res){
-
+        // set the body data in postman like we did for post to send in the data body
+        // set the params ID in postman to get send an ID along.
+        // ensure to delete the comment above and implement after line #63
+        const body = req.body;
+        const parameter = req.query;
+        
     }
     // handler for public DELETE admin request
     deleteAdmin(req, res){
@@ -103,6 +108,6 @@ export class AuthController {
         return errors;
     }
     _validateUpdateAdmin(req, res){
-        
+
     }
 }

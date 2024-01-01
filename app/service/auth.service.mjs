@@ -3,6 +3,7 @@ import path from 'path';
 import dotenv from "dotenv";
 import DB from "../../db/index.mjs";
 import fileDirName from '../../file-dir-name.mjs';
+import { UserService } from './user.service.mjs';
 
 const { __dirname } = fileDirName(import.meta);
 
@@ -13,6 +14,7 @@ const MAILER_API = process.env.MAIL_SERVER_URL;
 
 export class AuthService{
     DBPATH = "/../../db/records.json";
+    userService = new UserService();
     constructor(){}
     saveAdmin(data){
         const dbJson = JSON.parse(DB);
@@ -31,7 +33,21 @@ export class AuthService{
     }
     updateAdmin(id, data){
         const dbJson = JSON.parse(DB);
-        const users = [...dbJson.users];
-        return data;
+        const index = [...dbJson.users].indexOf(u=>u.id == id);
+        const user = this.userService.getByID(id);
+        Object.keys(data).forEach((key)=> {
+            // un-updatable fields
+            if(key !== 'email' && key !== 'id' && key !== 'code' && data[key].length > 0){
+                user[key] = data[key]
+            }
+        });
+        const now = new Date(Date.now());
+        user.created_at = now;
+        user.updated_at = now;
+        dbJson.users[index] = user;
+        fs.writeFileSync(path.join(
+            path.normalize(__dirname + this.DBPATH)
+        ), JSON.stringify({...dbJson}, null, 2));
+        return user;
     }
 }
