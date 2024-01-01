@@ -30,6 +30,6 @@ export class AuthService{
         return data;
     }
     updateAdmin(id, data){
-        
+        return data;
     }
 }
