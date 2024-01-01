@@ -431,6 +431,57 @@
       "created_at": "2023-12-31T16:02:10.769Z",
       "updated_at": "2023-12-31T16:02:10.769Z",
       "status": "Active"
+    },
+    {
+      "email": "ifyugboko@gmail.com",
+      "password": "12345456",
+      "role": [
+        "Admin"
+      ],
+      "code": "2367",
+      "firstName": "Ugboko",
+      "lastName": "Ifeanyi",
+      "phone": "08068602247",
+      "country": "Nigeria",
+      "who": "Chi",
+      "id": 3,
+      "created_at": "2024-01-01T16:46:07.066Z",
+      "updated_at": "2024-01-01T16:46:07.066Z",
+      "status": "Active"
+    },
+    {
+      "email": "ifyugboko12@gmail.com",
+      "password": "12345456",
+      "role": [
+        "Admin"
+      ],
+      "code": "2367",
+      "firstName": "Ugboko",
+      "lastName": "Ifeanyi",
+      "phone": "08068602247",
+      "country": "Nigeria",
+      "who": "Chi",
+      "id": 4,
+      "created_at": "2024-01-01T16:47:10.364Z",
+      "updated_at": "2024-01-01T16:47:10.364Z",
+      "status": "Active"
+    },
+    {
+      "email": "ugboko_20104joy@yahoo.com",
+      "password": "12345456",
+      "role": [
+        "Admin"
+      ],
+      "code": "2367",
+      "firstName": "Ugboko",
+      "lastName": "Ifeanyi",
+      "phone": "08068602247",
+      "country": "Nigeria",
+      "who": "Chi",
+      "id": 5,
+      "created_at": "2024-01-01T17:51:35.983Z",
+      "updated_at": "2024-01-01T17:51:35.983Z",
+      "status": "Active"
     }
   ],
   "transaction": [],
