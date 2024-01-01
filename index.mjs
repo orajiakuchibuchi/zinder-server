@@ -18,6 +18,7 @@ import { BookingController } from "./app/controller/booking.controller.mjs";
 import { UserController } from "./app/controller/user.controller.mjs";
 import { AttendanceController } from "./app/controller/attendance.controller.mjs";
 import { MailController } from "./app/controller/mail.controller.mjs";
+import { AuthController } from "./app/controller/auth.controller.mjs";
 
 dotenv.config();
 
@@ -34,6 +35,7 @@ const telegram = new TelegramController();
 const bookings = new BookingController();
 const userController = new UserController();
 const attendanceController = new AttendanceController();
+const authController = new AuthController();
 const mailController = new MailController(express);
 const TELEGRAM_MASTERGROUPCHATID = process.env.TELEGRAM_MASTERGROUPCHATID;
 
@@ -108,6 +110,12 @@ app.use(middlewares);
 //   res.jsonp(user);
 // })
 
+// ====== CUSTOM API STARTS ====== (POST, GET, PATCH/UPDATE, DELETE)
+app.post('/register-admin', (req, res)=>authController.register(req, res))
+app.get('/get-admins', (req, res)=>authController.getAdmins(req, res))
+app.patch('/update-admin', (req, res)=>authController.updateAdmin(req, res))
+app.delete('/delete-admin', (req, res)=>authController.deleteAdmin(req, res))
+
 app.get('/my-events/who_like=:who_like', (req, res) => {
   const dbJson = fs.readFileSync(path.join(DB));
 	const events = JSON.parse(dbJson).events;
@@ -149,6 +157,7 @@ app.get('/my-conversations/who_like=:who_like', (req, res) => {
   res.jsonp(myrelated);
 })
 
+// ====== CUSTOM API ENDS ======
 
 
 
@@ -182,3 +191,4 @@ function validateEmail(email){
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
+
