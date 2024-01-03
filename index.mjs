@@ -19,6 +19,7 @@ import { UserController } from "./app/controller/user.controller.mjs";
 import { AttendanceController } from "./app/controller/attendance.controller.mjs";
 import { MailController } from "./app/controller/mail.controller.mjs";
 import { AuthController } from "./app/controller/auth.controller.mjs";
+import { DepartmentController } from "./app/controller/department.controller.mjs";
 
 dotenv.config();
 
@@ -36,6 +37,7 @@ const bookings = new BookingController();
 const userController = new UserController();
 const attendanceController = new AttendanceController();
 const authController = new AuthController();
+const departmentController = new DepartmentController();
 const mailController = new MailController(express);
 const TELEGRAM_MASTERGROUPCHATID = process.env.TELEGRAM_MASTERGROUPCHATID;
 
@@ -111,6 +113,16 @@ app.use(middlewares);
 // })
 
 // ====== CUSTOM API STARTS ====== (POST, GET, PATCH/UPDATE, DELETE)
+
+
+app.post('/hr/department/create', (req, res)=>departmentController.create(req, res));
+app.get('/hr/department/read', (req, res)=>departmentController.read(req, res));
+app.patch('/hr/department/update', (req, res)=>departmentController.update(req, res));
+app.delete('/hr/department/delete', (req, res)=>departmentController.delete(req, res));
+app.get('/hr/department/all', (req, res)=>departmentController.all(req, res));
+
+
+
 app.post('/register-admin', (req, res)=>authController.register(req, res))
 app.get('/get-admins', (req, res)=>authController.getAdmins(req, res))
 app.patch('/update-admin', (req, res)=>authController.updateAdmin(req, res))
