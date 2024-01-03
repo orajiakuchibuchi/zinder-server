@@ -94,11 +94,10 @@ app.get("/dashboard", passageAuthMiddleware, async (req, res) => {
 });
 
 
-app.use(JsonServer.defaults());
+
 app.use(middlewares);
 
 
-app.use(router);
 
 // Add custom routes before JSON Server router
 
@@ -169,6 +168,8 @@ app.get('/myip', (req, res) => {
   console.log(ipAddress)
   res.jsonp(ipAddress);
 })
+app.use(JsonServer.defaults());
+app.use(router);
 app.set("view engine", "hbs");
 app.set("view engine", "html");
 app.engine("html", hbs.__express);
