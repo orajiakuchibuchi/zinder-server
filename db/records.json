@@ -392,7 +392,31 @@
     }
   ],
   "users": [
-    
+    {
+      "who": "GUEST",
+      "firstName": "Chibuchi",
+      "lastName": "Orajiaku",
+      "country": "Nigeria",
+      "phone": "08140131453",
+      "email": "somtobuchi@gmail.com",
+      "code": "ZU-6ab76344",
+      "password": "Password1",
+      "role": [
+        [
+          "Admin"
+        ]
+      ],
+      "created_at": "2024-01-03T21:24:54.836Z",
+      "updated_at": "2024-01-03T21:24:54.836Z",
+      "status": "Active",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
   ],
   "transaction": [],
   "beneficiaries": [

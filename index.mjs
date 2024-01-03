@@ -98,19 +98,9 @@ app.use(JsonServer.defaults());
 app.use(middlewares);
 
 
+app.use(router);
+
 // Add custom routes before JSON Server router
-// app.post('/users', async (req, res) => {
-//   if (!validateEmail(req.email) ) {
-//     return res.status(500).jsonp({error: "Not a valid email value"});
-//   }
-//   const user = DBJSON.users.find(u=>u.email.toLowerCase() == req.email.toLowerCase());
-//   if(!user){
-//     DBJSON.users.push(req.query);
-//     const response = await fs.writeFileSync(DBJSON, JSON.stringify(DBJSON));
-//     res.jsonp(req.query);
-//   }
-//   res.jsonp(user);
-// })
 
 // ====== CUSTOM API STARTS ====== (POST, GET, PATCH/UPDATE, DELETE)
 
@@ -172,8 +162,6 @@ app.get('/my-conversations/who_like=:who_like', (req, res) => {
 // ====== CUSTOM API ENDS ======
 
 
-
-app.use(router);
 app.get('/myip', (req, res) => {
   const ipAddress =  req.header('x-forwarded-for') ||
   req.socket.remoteAddress;
@@ -195,12 +183,4 @@ app.listen(PORT, () => {
     console.log(mes);
 });
 
-
-function validateEmail(email){
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-};
 
