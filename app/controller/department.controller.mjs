@@ -6,67 +6,92 @@ export class DepartmentController {
   departmentService = new DepartmentService();
   constructor() {}
   create(req, res) {
-    // get the request body
-    const body = req.body;
-    const validation = this._validateCreate(body);
-    if (validation.length > 0) {
-      let message = ``;
-      // Loop and convert all error to string using the inbuilt array forach
-      validation.forEach((element) => (message += `${element}\n`));
+    try {
+      // get the request body
+      const body = req.body;
+      const validation = this._validateCreate(body);
+      if (validation.length > 0) {
+        let message = ``;
+        // Loop and convert all error to string using the inbuilt array forach
+        validation.forEach((element) => (message += `${element}\n`));
+        // return an error status message in json format
+        return res.status(500).json({
+          message: message,
+          errors: validation,
+        });
+      }
+      // check if email already exist in db from user service
+      const department = this.departmentService.save(body);
+      // return a success response in json format
+      return res.status(200).json({
+        message: "Department created",
+        data: department,
+      });
+    } catch (error) {
       // return an error status message in json format
       return res.status(500).json({
-        message: message,
-        errors: validation,
+        message: 'Ensure to send an encoded POST request',
+        errors: error.message,
       });
     }
-    // check if email already exist in db from user service
-    const department = this.departmentService.save(body);
-    // return a success response in json format
-    return res.status(200).json({
-      message: "Department created",
-      data: department,
-    });
   }
   read(req, res) {
-    const parameter = req.query;
-    const validation = this._validateRead(parameter);
-    if (validation.length > 0) {
-      let message = ``;
-      // Loop and convert all error to string using the inbuilt array forach
-      validation.forEach((element) => (message += `${element}\n`));
-      // return an error status message in json format
+    try {
+      const parameter = req.query;
+      const validation = this._validateRead(parameter);
+      if (validation.length > 0) {
+        let message = ``;
+        // Loop and convert all error to string using the inbuilt array forach
+        validation.forEach((element) => (message += `${element}\n`));
+        // return an error status message in json format
+        return res.status(500).json({
+          message: message,
+          errors: validation,
+        });
+      }
+      const department = this.departmentService.getBy("code", parameter.code);
+      return res.status(200).json({
+        message: "Result Completed",
+        data: department.pop(),
+      });
+    } catch (error) {
       return res.status(500).json({
-        message: message,
-        errors: validation,
+        message: 'Cannot access query parameters',
+        errors: error.message,
       });
     }
-    const department = this.departmentService.getBy("code", parameter.code);
-    return res.status(200).json({
-      message: "Result Completed",
-      data: department.pop(),
-    });
+   
   }
   all(req, res) {
-    const parameter = req.query;
-    const validation = this._validateAll(parameter);
-    if (validation.length > 0) {
-      let message = ``;
-      // Loop and convert all error to string using the inbuilt array forach
-      validation.forEach((element) => (message += `${element}\n`));
-      // return an error status message in json format
+    try {
+      const parameter = req.query;
+      const validation = this._validateAll(parameter);
+      if (validation.length > 0) {
+        let message = ``;
+        // Loop and convert all error to string using the inbuilt array forach
+        validation.forEach((element) => (message += `${element}\n`));
+        // return an error status message in json format
+        return res.status(500).json({
+          message: message,
+          errors: validation,
+        });
+      }
+      const departments = this.departmentService.getBy("who", parameter.who);
+      return res.status(200).json({
+        message: "Result Completed",
+        data: departments,
+      });
+    } catch (error) {
       return res.status(500).json({
-        message: message,
-        errors: validation,
+        message: 'Cannot access query parameter',
+        errors: error.message,
       });
     }
-    const departments = this.departmentService.getBy("who", parameter.who);
-    return res.status(200).json({
-      message: "Result Completed",
-      data: departments,
-    });
+
   }
   update(req, res) {
-    // set the body data in postman like we did for post to send in the data body
+    try {
+      // set the body data in postman like we did for post to send in the data body
     // set the params ID in postman to get send an ID along.
     // ensure to delete the comment above and implement after line #63
     const body = req.body;
@@ -106,9 +131,16 @@ export class DepartmentController {
       message: "Query completed",
       data: updated,
     });
+    } catch (error) {
+      return res.status(500).json({
+        message: "Issues with request",
+        errors: error.message,
+      });
+    }
   }
   delete(req, res) {
-    const parameter = req.query;
+    try {
+      const parameter = req.query;
     const validation = this._validateDelete(parameter);
     if (validation.length > 0) {
       let message = ``;
@@ -132,6 +164,12 @@ export class DepartmentController {
       message: "Query completed",
       data: deleted,
     });
+    } catch (error) {
+      return res.status(500).json({
+        message: "Issues with request",
+        errors: error.message,
+      });
+    }
   }
   _validateCreate(body) {
     let errors = [];

@@ -157,6 +157,25 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 2
+    },
+    {
+      "who": "ZU-6ab76344",
+      "name": "MorrhtechSolution",
+      "website": "MorrhtechSolution.com",
+      "logo": "http://localhost:3002/v/4-0-2024/1704375302251-Screenshot (107).png",
+      "country": "Nigeria",
+      "address": "G close, Festac Town, Lagos",
+      "cerated_at": "2024-01-04T13:35:07.284Z",
+      "updated_at": "2024-01-04T13:35:07.284Z",
+      "status": "Active",
+      "code": "ZC-b49b5b31",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 3
     }
   ],
   "company-user": [
@@ -183,6 +202,18 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 2
+    },
+    {
+      "who": "ZU-6ab76344",
+      "company": "ZC-b49b5b31",
+      "user": "ZU-6ab76344",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 3
     }
   ],
   "company-selected": [],
@@ -389,6 +420,98 @@
       "browser": "Chrome",
       "deviceOrientation": "landscape",
       "id": 4
+    },
+    {
+      "who": "ZU-6ab76344",
+      "app": {
+        "short_name": "HR Solution",
+        "long_name": "Human Resource Solution App",
+        "status": "Active",
+        "code": "ZA-001",
+        "fee": 50000,
+        "icon": "assets/img/human-resources.png",
+        "created_at": "2023-06-09T22:40:10.840Z",
+        "updated_at": "2023-06-09T22:40:10.840Z",
+        "id": 1
+      },
+      "transaction": {
+        "status": "successful",
+        "customer": {
+          "name": "Chibuchi ",
+          "email": "somtobuchi@gmail.com",
+          "phone_number": "08140131453"
+        },
+        "transaction_id": 4828243,
+        "tx_ref": "APPSUB-817454626775047",
+        "flw_ref": "FLW-M03K-59e8fbb06a0ba54d3e9a3348c99120dd",
+        "currency": "NGN",
+        "amount": 50000,
+        "charged_amount": 50000,
+        "charge_response_code": "00",
+        "charge_response_message": "Approved",
+        "created_at": "2024-01-04T13:35:23.000Z"
+      },
+      "company": "ZC-b49b5b31",
+      "code": "ZinTranz-ZU-6ab76344-ZC-b49b5b31-1704375325496-35683",
+      "created_at": "2025-01-04T13:35:25.496Z",
+      "updated_at": "2025-01-04T13:35:25.496Z",
+      "expires_at": "2025-01-04T13:35:25.496Z",
+      "status": "Active",
+      "type": "App",
+      "user": "ZU-6ab76344",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 5
+    },
+    {
+      "who": "ZU-6ab76344",
+      "app": {
+        "short_name": "AS App",
+        "long_name": "Accounting App",
+        "code": "ZA-002",
+        "fee": 45000,
+        "status": "Active",
+        "icon": "assets/img/Accounting-Design-Logo-Templates.jpg",
+        "created_at": "2023-06-09T22:40:10.840Z",
+        "updated_at": "2023-06-09T22:40:10.840Z",
+        "id": 3
+      },
+      "transaction": {
+        "status": "successful",
+        "customer": {
+          "name": "Chibuchi ",
+          "email": "somtobuchi@gmail.com",
+          "phone_number": "08140131453"
+        },
+        "transaction_id": 4828244,
+        "tx_ref": "APPSUB-877638673708080",
+        "flw_ref": "FLW-M03K-433a8a9b5a90e43712557e2b561a459c",
+        "currency": "NGN",
+        "amount": 45000,
+        "charged_amount": 45000,
+        "charge_response_code": "00",
+        "charge_response_message": "Approved",
+        "created_at": "2024-01-04T13:35:49.000Z"
+      },
+      "company": "ZC-b49b5b31",
+      "code": "ZinTranz-ZU-6ab76344-ZC-b49b5b31-1704375350292-98226",
+      "created_at": "2025-01-04T13:35:50.292Z",
+      "updated_at": "2025-01-04T13:35:50.292Z",
+      "expires_at": "2025-01-04T13:35:50.292Z",
+      "status": "Active",
+      "type": "App",
+      "user": "ZU-6ab76344",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 6
     }
   ],
   "users": [

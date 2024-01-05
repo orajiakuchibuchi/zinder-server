@@ -36,6 +36,10 @@ export class DepartmentService{
         const found = this.departments().filter(u=>u[field] == value);
         return found
     }
+    findBy(field, value){
+        const found = this.departments().find(u=>u[field] == value);
+        return found
+    }
     delete(code){
         const indexOf = this.departments().findIndex(d=>d.code ==code);
         const dbJson = JSON.parse(DB);
