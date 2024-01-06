@@ -3,5 +3,5 @@
 /node_modules
 # /public/v
 /db/record.backup.json
-/db/records.json
+# /db/records.json
 package-lock.json
