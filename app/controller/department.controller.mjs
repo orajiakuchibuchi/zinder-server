@@ -76,7 +76,8 @@ export class DepartmentController {
           errors: validation,
         });
       }
-      const departments = this.departmentService.getBy("who", parameter.who);
+      const departments = this.departmentService.getBy("who", parameter.who)
+                                                .filter(d=>d.company == parameter.company);
       return res.status(200).json({
         message: "Result Completed",
         data: departments,
@@ -245,6 +246,10 @@ export class DepartmentController {
     let errors = [];
     if (!body.who) {
       errors.unshift("Who sent this request");
+    }
+    
+    if (!body.company) {
+      errors.unshift("Company is not found");
     }
     return errors;
   }
