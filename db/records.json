@@ -5,14 +5,183 @@
   "jobPositions": [],
   "jobOpenings": [],
   "jobApplications": [],
-  "companys": [],
-  "company-user": [],
+  "companys": [
+    {
+      "who": "ZU-6ab76344",
+      "name": "MorrhtechSolution",
+      "website": "",
+      "logo": "http://localhost:3002/v/6-0-2024/1704566087182-Screenshot (106).png",
+      "country": "Nigeria",
+      "address": "G close, Festac Town, Lagos",
+      "cerated_at": "2024-01-06T18:34:49.999Z",
+      "updated_at": "2024-01-06T18:34:49.999Z",
+      "status": "Active",
+      "code": "ZC-c6f2cc72",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
+  "company-user": [
+    {
+      "who": "ZU-6ab76344",
+      "company": "ZC-c6f2cc72",
+      "user": "ZU-6ab76344",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "company-selected": [],
   "departments": [],
-  "subscriptions": [],
-  "users": [],
+  "subscriptions": [
+    {
+      "who": "ZU-6ab76344",
+      "app": {
+        "short_name": "HR Solution",
+        "long_name": "Human Resource Solution App",
+        "status": "Active",
+        "code": "ZA-001",
+        "fee": 50000,
+        "icon": "assets/img/human-resources.png",
+        "created_at": "2023-06-09T22:40:10.840Z",
+        "updated_at": "2023-06-09T22:40:10.840Z",
+        "id": 1
+      },
+      "transaction": {
+        "status": "successful",
+        "customer": {
+          "name": "Chibuchi ",
+          "email": "somtobuchi@gmail.com",
+          "phone_number": "08140131453"
+        },
+        "transaction_id": 4833048,
+        "tx_ref": "APPSUB-517083335381282",
+        "flw_ref": "FLW-M03K-91e60990247ae9c4839cef91ae9499c4",
+        "currency": "NGN",
+        "amount": 50000,
+        "charged_amount": 50000,
+        "charge_response_code": "00",
+        "charge_response_message": "Approved",
+        "created_at": "2024-01-06T18:36:14.000Z"
+      },
+      "company": "ZC-c6f2cc72",
+      "code": "ZinTranz-ZU-6ab76344-ZC-c6f2cc72-1704566176528-92681",
+      "created_at": "2025-01-06T18:36:16.528Z",
+      "updated_at": "2025-01-06T18:36:16.528Z",
+      "expires_at": "2025-01-06T18:36:16.528Z",
+      "status": "Active",
+      "type": "App",
+      "user": "ZU-6ab76344",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    },
+    {
+      "who": "ZU-6ab76344",
+      "app": {
+        "short_name": "AS App",
+        "long_name": "Accounting App",
+        "code": "ZA-002",
+        "fee": 45000,
+        "status": "Active",
+        "icon": "assets/img/Accounting-Design-Logo-Templates.jpg",
+        "created_at": "2023-06-09T22:40:10.840Z",
+        "updated_at": "2023-06-09T22:40:10.840Z",
+        "id": 3
+      },
+      "transaction": {
+        "status": "successful",
+        "customer": {
+          "name": "Chibuchi ",
+          "email": "somtobuchi@gmail.com",
+          "phone_number": "08140131453"
+        },
+        "transaction_id": 4833050,
+        "tx_ref": "APPSUB-930152276934216",
+        "flw_ref": "FLW-M03K-1915d92fcedc941fa0f7aa53cd69c523",
+        "currency": "NGN",
+        "amount": 45000,
+        "charged_amount": 45000,
+        "charge_response_code": "00",
+        "charge_response_message": "Approved",
+        "created_at": "2024-01-06T18:39:14.000Z"
+      },
+      "company": "ZC-c6f2cc72",
+      "code": "ZinTranz-ZU-6ab76344-ZC-c6f2cc72-1704566355626-34240",
+      "created_at": "2025-01-06T18:39:15.626Z",
+      "updated_at": "2025-01-06T18:39:15.626Z",
+      "expires_at": "2025-01-06T18:39:15.626Z",
+      "status": "Active",
+      "type": "App",
+      "user": "ZU-6ab76344",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "who": "GUEST",
+      "firstName": "Chibuchi",
+      "lastName": "Orajiaku",
+      "country": "Nigeria",
+      "phone": "0814014136",
+      "email": "somtobuchi@gmail.com",
+      "code": "ZU-6ab76344",
+      "password": "password1",
+      "role": [
+        [
+          "Admin"
+        ]
+      ],
+      "created_at": "2024-01-06T18:34:11.280Z",
+      "updated_at": "2024-01-06T18:34:11.280Z",
+      "status": "Active",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "transaction": [],
-  "beneficiaries": [],
+  "beneficiaries": [
+    {
+      "who": "ZU-6ab76344",
+      "name": "Chibuchi Orajiaku",
+      "wallet_id": "0147364747",
+      "created_at": "1704567270034",
+      "updated_at": "1704567270034",
+      "status": "Active",
+      "code": "1d977e5c",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "browserVersion": "120.0.0.0",
+      "os": "Windows",
+      "osVersion": "windows-10",
+      "browser": "Chrome",
+      "deviceOrientation": "landscape",
+      "id": 1
+    }
+  ],
   "conversation": [],
   "auth": [],
   "bookings": [],

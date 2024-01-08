@@ -31,10 +31,140 @@ class JobPosition {
       });
     }
   }
-  read(req, res) {}
-  update(req, res) {}
-  delete(req, res) {}
-  all(req, res) {}
+  read(req, res) {
+    try {
+      const parameter = req.query;
+      const validation = this._validateRead(parameter);
+      if (validation.length > 0) {
+        let message = ``;
+        // Loop and convert all error to string using the inbuilt array forach
+        validation.forEach((element) => (message += `${element}\n`));
+        // return an error status message in json format
+        return res.status(500).json({
+          message: message,
+          errors: validation,
+        });
+      }
+      
+      return res.status(200).json({
+        message: "Result Completed",
+        data: {},
+      });
+    } catch (error) {
+      return res.status(500).json({
+        message: "Cannot access query parameters",
+        errors: error.message,
+      });
+    }
+  }
+  all(req, res) {
+    try {
+      const parameter = req.query;
+      const validation = this._validateAll(parameter);
+      if (validation.length > 0) {
+        let message = ``;
+        // Loop and convert all error to string using the inbuilt array forach
+        validation.forEach((element) => (message += `${element}\n`));
+        // return an error status message in json format
+        return res.status(500).json({
+          message: message,
+          errors: validation,
+        });
+      }
+      
+      return res.status(200).json({
+        message: "Result Completed",
+        data: [],
+      });
+    } catch (error) {
+      return res.status(500).json({
+        message: "Cannot access query parameter",
+        errors: error.message,
+      });
+    }
+  }
+  update(req, res) {
+    try {
+      // set the body data in postman like we did for post to send in the data body
+      // set the params ID in postman to get send an ID along.
+      // ensure to delete the comment above and implement after line #63
+      const body = req.body;
+      const parameter = req.query;
+      const validation = this._validateUpdate(body);
+      if (!parameter.code || parameter.code.length < 1) {
+        return res.status(500).json({
+          message: "No code found",
+          errors: ["No code found"],
+        });
+      }
+      if (!parameter.who || parameter.who.length < 1) {
+        return res.status(500).json({
+          message: "No [who] found when making this request",
+          errors: ["No [who] found when making this request"],
+        });
+      }
+      if (validation.length > 0) {
+        let message = ``;
+        // Loop and convert all error to string using the inbuilt array forach
+        validation.forEach((element) => (message += `${element}\n`));
+        // return an error status message in json format
+        return res.status(500).json({
+          message: message,
+          errors: validation,
+        });
+      }
+      const doesExist = [];
+      if (doesExist.length < 1) {
+        return res.status(500).json({
+          message: "Unknown Code",
+          errors: ["Code Invalid"],
+        });
+      }
+      
+      return res.status(200).json({
+        message: "Query completed",
+        data: {},
+      });
+    } catch (error) {
+      return res.status(500).json({
+        message: "Issues with request",
+        errors: error.message,
+      });
+    }
+  }
+  delete(req, res) {
+    try {
+      const parameter = req.query;
+      const validation = this._validateDelete(parameter);
+      if (validation.length > 0) {
+        let message = ``;
+        // Loop and convert all error to string using the inbuilt array forach
+        validation.forEach((element) => (message += `${element}\n`));
+        // return an error status message in json format
+        return res.status(500).json({
+          message: message,
+          errors: validation,
+        });
+      }
+      const doesExist = [];
+      if (doesExist.length < 1) {
+        return res.status(500).json({
+          message: "Unknown Code",
+          errors: ["Code Invalid"],
+        });
+      }
+      
+      return res.status(200).json({
+        message: "Query completed",
+        data: {},
+      });
+    } catch (error) {
+      return res.status(500).json({
+        message: "Issues with request",
+        errors: error.message,
+      });
+    }
+  }
   _validateCreate(body) {
     let errors = [];
     if (!body.who) {
@@ -88,7 +218,10 @@ class JobPosition {
         "Description is too short, ensure to make Description up to 30 characters"
       );
     }
-    if (body.department_id && !this.departmentService.findBy("code", body.department_id)) {
+    if (
+      body.department_id &&
+      !this.departmentService.findBy("code", body.department_id)
+    ) {
       errors.unshift("Department Code is unknown");
     }
     return errors;

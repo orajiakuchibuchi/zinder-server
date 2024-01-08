@@ -21,6 +21,7 @@ import { MailController } from "./app/controller/mail.controller.mjs";
 import { AuthController } from "./app/controller/auth.controller.mjs";
 import { DepartmentController } from "./app/controller/department.controller.mjs";
 import { RecruitmentController } from "./app/controller/recruitment.controller.mjs";
+import { InvoiceController } from "./app/controller/invoice.controller.mjs";
 
 dotenv.config();
 
@@ -40,6 +41,7 @@ const attendanceController = new AttendanceController();
 const authController = new AuthController();
 const departmentController = new DepartmentController();
 const recruitmentController = new RecruitmentController();
+const invoiceController = new InvoiceController()
 const mailController = new MailController(express);
 const TELEGRAM_MASTERGROUPCHATID = process.env.TELEGRAM_MASTERGROUPCHATID;
 
@@ -106,6 +108,13 @@ app.use(middlewares);
 // ====== CUSTOM API STARTS ====== (POST, GET, PATCH/UPDATE, DELETE)
 
 
+app.post('/accounting/invoice/create', (req, res)=>invoiceController.create(req, res));
+app.get('/accounting/invoice/read', (req, res)=>invoiceController.read(req, res));
+app.patch('/accounting/invoice/update', (req, res)=>invoiceController.update(req, res));
+app.delete('/accounting/invoice/delete', (req, res)=>invoiceController.delete(req, res));
+app.get('/accounting/invoice/all', (req, res)=>invoiceController.all(req, res));
+
+
 app.post('/hr/department/create', (req, res)=>departmentController.create(req, res));
 app.get('/hr/department/read', (req, res)=>departmentController.read(req, res));
 app.patch('/hr/department/update', (req, res)=>departmentController.update(req, res));
@@ -120,19 +129,11 @@ app.patch('/hr/recruitment/job-position/update', (req, res)=>recruitmentControll
 app.delete('/hr/recruitment/job-position/delete', (req, res)=>recruitmentController.position.delete(req, res));
 app.get('/hr/recruitment/job-position/all', (req, res)=>recruitmentController.position.all(req, res));
 
-
-// app.post('/hr/recruitment/job-opening/create', (req, res)=>departmentController.create(req, res));
-// app.get('/hr/recruitment/job-opening/read', (req, res)=>departmentController.read(req, res));
-// app.patch('/hr/recruitment/job-opening/update', (req, res)=>departmentController.update(req, res));
-// app.delete('/hr/recruitment/job-opening/delete', (req, res)=>departmentController.delete(req, res));
-// app.get('/hr/recruitment/job-opening/all', (req, res)=>departmentController.all(req, res));
-
-
-// app.post('/hr/recruitment/job-application/create', (req, res)=>departmentController.create(req, res));
-// app.get('/hr/recruitment/job-application/read', (req, res)=>departmentController.read(req, res));
-// app.patch('/hr/recruitment/job-application/update', (req, res)=>departmentController.update(req, res));
-// app.delete('/hr/recruitment/job-application/delete', (req, res)=>departmentController.delete(req, res));
-// app.get('/hr/recruitment/job-application/all', (req, res)=>departmentController.all(req, res));
+app.post('/hr/recruitment/job-opening/create', (req, res)=>recruitmentController.opening.create(req, res));
+app.get('/hr/recruitment/job-opening/read', (req, res)=>recruitmentController.opening.read(req, res));
+app.patch('/hr/recruitment/job-opening/update', (req, res)=>recruitmentController.opening.update(req, res));
+app.delete('/hr/recruitment/job-opening/delete', (req, res)=>recruitmentController.opening.delete(req, res));
+app.get('/hr/recruitment/job-opening/all', (req, res)=>recruitmentController.opening.all(req, res));
 
 
 
