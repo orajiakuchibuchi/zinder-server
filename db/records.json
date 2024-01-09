@@ -273,6 +273,16 @@
       "roles": "everyone",
       "app_code": "ZA-001"
     },
+    
+    {
+      "id": 602,
+      "name": "Company",
+      "icon": "micon bi bi-calendar2-week-fill",
+      "children": [],
+      "link": "admin/company/records",
+      "roles": "everyone",
+      "app_code": "ZA-001"
+    },
     {
       "id": 1802,
       "name": "Performance",
@@ -415,27 +425,8 @@
       "id": 3,
       "name": "Events & Tasks",
       "icon": "micon bi bi-calendar",
-      "children": [
-        {
-          "id": 0,
-          "name": "Create",
-          "children": [],
-          "link": "admin/event/records",
-          "roles": "everyone",
-          "icon": "",
-          "app_code": "ZA-001"
-        },
-        {
-          "id": 1,
-          "name": "All",
-          "children": [],
-          "link": "admin/event/all",
-          "icon": "",
-          "roles": "everyone",
-          "app_code": "ZA-001"
-        }
-      ],
-      "link": "",
+      "children": [],
+      "link": "admin/event/records",
       "roles": "everyone",
       "app_code": "ZA-001"
     },
